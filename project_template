@@ -1,0 +1,22 @@
+### [Thriftr Project Template]
+
+### Pitch
+
+Thriftr is meant be used in conjunction with an existing budgeting app called YNAB (You Need a Budget).  YNAB’s role is to link the user’s banking accounts with their budget based on established spending categories.  Thriftr utilizes YNAB’s API to notify the user of their remaining budget on a per-category basis.  When a user is entering a restaurant, for example, they can use Thriftr to get a quick snapshot of their remaining budget for their “Out to Each” budget category. In addition, Thriftr is meant to be a mobile budgeting coach.  The user can opt-in to receive daily notifications about their budget, including fun saving facts, hilarious memes, and interesting data compiled from their current budget.
+
+### Problem
+
+Few budgeting applications interact with users when they need budgeting support the most: when they’re about to spend money. Budgeting works the best when it’s embedded in the fabric of daily life, usually in the form of work with a budgeting coach. But not everyone can afford a budgeting coach who can give constant reminder and support of positive spending habits.
+
+### Solution
+
+Thriftr is meant to support good spending habits in a just-in-time manner. It’s meant to act as a stand-in to a more expensive budgeting or financial coach.
+
+### Target Audience
+
+Millennials
+
+### Integrations
+
+* APIs used - YNAB, Google, Twilio
+* OAuth - YNAB
