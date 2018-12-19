@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   get '/ynab', to: redirect("/auth/ynab"), as: '/ynab'
-  get "/auth/ynab/callback", to: "user#create"
+  get "/auth/ynab/callback", to: "users#create"
 
   get '/privacy', to: 'privacy#show'
 
