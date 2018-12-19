@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   get '/privacy', to: 'privacy#show'
 
   get '/register', to: 'users#new'
+  get '/verify', to: 'verify#index'
+
+  resources :users, only: [:create]
 
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

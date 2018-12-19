@@ -10,7 +10,13 @@ feature "As a visitor" do
 
     expect(current_path).to eq('/register')
 
+    expect(page).to have_content("Sign up for Thriftr")
 
+    fill_in 'user[username]', with: "Bob"
+    fill_in 'user[phone_number]', with: '6182460553'
+    click_on "Create User"
+
+    expect(page).to have_content("Check phone for code")
   end
 
 end

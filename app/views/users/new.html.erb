@@ -1,1 +1,9 @@
-<h1> Register Here!</h1>
+<h1> Sign up for Thriftr</h1>
+
+<%= form_for @user do |form| %>
+    <%= form.label :username%>
+    <%= form.text_field :username%>
+    <%= form.label :phone_number%>
+    <%= form.text_field :phone_number%>
+  <%= form.submit %>
+<% end %>
