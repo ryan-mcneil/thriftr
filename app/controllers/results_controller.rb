@@ -1,6 +1,6 @@
 class ResultsController < ApplicationController
   def index
-    @facade = SearchFacade.new
+    @facade = LocationSearchFacade.new
   end
 
 end

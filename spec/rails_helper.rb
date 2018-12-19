@@ -7,6 +7,9 @@ require 'rspec/rails'
 require 'vcr'
 require 'webmock/rspec'
 
+require 'simplecov'
+SimpleCov.start
+
 VCR.configure do |config|
   config.ignore_localhost = true
   config.cassette_library_dir = 'spec/cassettes'

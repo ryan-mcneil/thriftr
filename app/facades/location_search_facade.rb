@@ -1,10 +1,10 @@
-class SearchFacade
+class LocationSearchFacade
 
   def initialize
     @types = ["restaurant", "store", "movie_theater", "bar"]
   end
 
-  def search_locations
+  def locations
     conn = Faraday.new(url: "https://maps.googleapis.com")
     results = conn.get "/maps/api/place/nearbysearch/json?location=39.742905,-104.989545&radius=500&key=#{ENV['GOOGLE_API_KEY']}"
 

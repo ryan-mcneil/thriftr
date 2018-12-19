@@ -1,7 +1,7 @@
 <h2>Select Your Current Location</h2>
 
 <div class="locations">
-  <% @facade.search_locations.each do |location| %>
+  <% @facade.locations.each do |location| %>
     <div class="location">
       <p><%= link_to location.name, dashboard_path %></p>
     </div>
