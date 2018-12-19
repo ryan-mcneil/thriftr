@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 feature "As a visitor" do
-  xscenario "visit login and use YNAB OAuth" do
+  scenario "visit login and use YNAB OAuth" do
 
     visit root_path
 

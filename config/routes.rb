@@ -2,8 +2,8 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
 
-  get '/ynab', to: redirect("/ynab/auth"), as: '/ynab'
-  get "/auth/:provider/callback", to: "user#create"
+  get '/ynab', to: redirect("/auth/ynab"), as: '/ynab'
+  get "/auth/ynab/callback", to: "user#create"
 
   get '/privacy', to: 'privacy#show'
 
