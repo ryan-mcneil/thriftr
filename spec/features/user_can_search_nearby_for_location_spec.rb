@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe 'a user' do
   it 'can search nearby for current location' do
-    stub_request(:get, "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=39.7491066,-104.9969853&radius=200&key=#{ENV['GOOGLE_API_KEY']}").
+    stub_request(:get, "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=39.742905,-104.989545&radius=500&key=#{ENV['GOOGLE_API_KEY']}").
               to_return(body: File.read("./spec/fixtures/nearby_search.json"))
 
     # As a registered user
@@ -17,8 +17,8 @@ describe 'a user' do
     expect(page).to have_content("Select Your Current Location")
     # I see a list of links with Location Names within 100 meters of my current location
     within '.locations' do
-      expect(page).to have_css(".location", count: 10)
-      expect(page).to have_link("The Cheesecake Factory")
+      expect(page).to have_css(".location", count: 6)
+      expect(page).to have_link("Maggiano's Little Italy")
     end
   end
 

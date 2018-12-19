@@ -3,7 +3,7 @@
 <div class="locations">
   <% @facade.search_locations.each do |location| %>
     <div class="location">
-      <p><%= location.name %></p>
+      <p><%= link_to location.name, dashboard_path %></p>
     </div>
   <% end %>
 </div>
