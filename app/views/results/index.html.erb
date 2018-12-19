@@ -1,0 +1,9 @@
+<h2>Select Your Current Location</h2>
+
+<div class="locations">
+  <% @facade.search_locations.each do |location| %>
+    <div class="location">
+      <p><%= location.name %></p>
+    </div>
+  <% end %>
+</div>
