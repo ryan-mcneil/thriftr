@@ -6,8 +6,10 @@ feature "As a visitor" do
 
     visit root_path
 
+    expect(page).to have_content("Please enter your phone number")
     expect(page).to have_button("Log in with YNAB")
     #We think the repsonse is looking for https and local host is http
+    fill_in :phone_number, with: 6182460553
     click_on "Log in with YNAB"
 
     expect(current_path).to eq(phone_path)
