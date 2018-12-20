@@ -11,7 +11,7 @@ class UsersController < ApplicationController
       twilio_verify
       redirect_to verify_path
     else
-      flash[:error] = "phone number already in use"
+      flash[:error] = "Invalid information"
       redirect_to register_path
     end
   end
