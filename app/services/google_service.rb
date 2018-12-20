@@ -24,8 +24,4 @@ class GoogleService
     }
   end
 
-  def get_current_position
-    "39.742905,-104.989545"
-  end
-
 end

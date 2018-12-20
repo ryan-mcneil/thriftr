@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe 'a user' do
-  it 'can search nearby for current location' do
+  xit 'can search nearby for current location', :js do
     stub_request(:get, "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=39.742905,-104.989545&radius=500&key=#{ENV['GOOGLE_API_KEY']}").
       to_return(body: File.read("./spec/fixtures/nearby_search.json"))
 
