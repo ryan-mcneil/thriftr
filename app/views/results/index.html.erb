@@ -1,0 +1,9 @@
+<h2>Select Your Current Location</h2>
+
+<div class="locations">
+  <% @facade.locations.each do |location| %>
+    <div class="location">
+      <p><%= link_to location.name, dashboard_path %></p>
+    </div>
+  <% end %>
+</div>

@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
 
-  root 'welcome#index'
+  get '/dashboard', to: 'dashboard#index'
+  get '/results', to: 'results#index'
+
+  root'welcome#index'
 
   get '/ynab', to: redirect("/auth/ynab"), as: '/ynab'
   get "/auth/ynab/callback", to: "users#create"

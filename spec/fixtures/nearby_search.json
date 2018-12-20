@@ -1,0 +1,962 @@
+{
+    "html_attributions": [],
+    "next_page_token": "CqQCFwEAABL_WM8rhcCABi1ynq58OpsfzQYYhTYTot5gsBVkyq5Ene-hOFubO_j69Nb9nHIWOwN1rtyHXKZ19ka92uUJ3Cab_NRpy_Y2KW0BiTxr0ZW2Yg0LXp2svlBMz7xhdE4ws12QchHKJ3gB1pJ2shOljBzfjBRxJ2dUPVeJuBMiGPgp5_wISN-tkyY72Cw2F4ANWcRjCAWHEXZYnoag24QFuHoIymUT-4JrsleOe4hktMSVEpytSDSCiBHAc8AtEM5k7WYio9ZY4zKmmSEyT3LJ7M8KckAeD5Ssdm5MMpgvwkTSkxmGXwL50aWTtHyshwlkdM-7xbC2DeXQTUPnDzXmGAHeGdX1UhXz0QKnsI12CyXLNjdaJxo5DrrkiIL731IY9hIQtMmuAEN-ZL1L9Raktza_SBoUn5oo9EcCrjLGgykxZ2x2j25QETI",
+    "results": [
+        {
+            "geometry": {
+                "location": {
+                    "lat": 39.7392358,
+                    "lng": -104.990251
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 39.91424689999999,
+                        "lng": -104.6002959
+                    },
+                    "southwest": {
+                        "lat": 39.614431,
+                        "lng": -105.109927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+            "id": "464b513e4fd9a3c7c3bd63d091ecc856aff12e2c",
+            "name": "Denver",
+            "photos": [
+                {
+                    "height": 2268,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/114500533241012553867/photos\">Eric Eichel</a>"
+                    ],
+                    "photo_reference": "CmRaAAAAopIiLeuObfBNjQci8lB2ECiGUFxdLuLL1R7U2qlZvBnBY5pXPxqXWlVOmKpJXlgYvcW-4RZUR13qU0nxZ2U4BvCZf-bOygPisE-Lc-tik0yzEqNEz2YtpAy8z2KUwI7WEhAbaqtwc6bF1hs3eZZdCh9tGhSu00IlrY5S-QZFTZUmUhNBpO9q1Q",
+                    "width": 4032
+                }
+            ],
+            "place_id": "ChIJzxcfI6qAa4cR1jaKJ_j0jhE",
+            "reference": "ChIJzxcfI6qAa4cR1jaKJ_j0jhE",
+            "scope": "GOOGLE",
+            "types": [
+                "locality",
+                "political"
+            ],
+            "vicinity": "Denver"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": 39.7422699,
+                    "lng": -104.9894819
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 39.74369163029151,
+                        "lng": -104.9878266697085
+                    },
+                    "southwest": {
+                        "lat": 39.74099366970851,
+                        "lng": -104.9905246302915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+            "id": "9bee80523c214ed4a3c1f51f691212218c422cba",
+            "name": "Sheraton Denver Downtown Hotel",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 2879,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/115005288707838368637/photos\">Sheraton Denver Downtown Hotel</a>"
+                    ],
+                    "photo_reference": "CmRaAAAA_nGbUnndNiL_JKnNAfHK3cQd8jOlGpVX80PME9_10fBl5n0WxYF0ClsuqdaVEHPpA4_chYaEb-l42r8TCBebXE8pWG69CyS-4p_pkyMruljWfoaVzpG8O3iciPnH9LruEhAYYcLYgk4Xg76-db2idx7RGhTUYeCWc2io-i5wwSjyMmxLYZLDXw",
+                    "width": 3839
+                }
+            ],
+            "place_id": "ChIJ8Y6vMNR4bIcRHgkd29qFnA4",
+            "plus_code": {
+                "compound_code": "P2R6+W6 Denver, Colorado, United States",
+                "global_code": "85FQP2R6+W6"
+            },
+            "rating": 4.2,
+            "reference": "ChIJ8Y6vMNR4bIcRHgkd29qFnA4",
+            "scope": "GOOGLE",
+            "types": [
+                "lodging",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "1550 Court Place, Denver"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": 39.7444934,
+                    "lng": -104.9884085
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 39.7457601802915,
+                        "lng": -104.9871747197085
+                    },
+                    "southwest": {
+                        "lat": 39.7430622197085,
+                        "lng": -104.9898726802915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+            "id": "d6b297a356dda27589be72d28e866efb1367a82b",
+            "name": "Holiday Inn Express Denver Downtown",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 4000,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/115833252509657581954/photos\">Holiday Inn Express Denver Downtown</a>"
+                    ],
+                    "photo_reference": "CmRaAAAAs6_hzdT27Gdu30VwR1MLVvtBKFjnExZgBjgVFuf47h8uUni3slthIjos_6zqEFp4uI2Jrbqek-N1X-U0CXg-4Bxo6WyfUCVBnqnSTtEVsCWqzrQtcwpXnG7CAzDfWmXdEhCbZeCa6Wfeg8WE4CB6lwNRGhT7Du4GngJb7Wmzz0eDJ_0btPFnJQ",
+                    "width": 3001
+                }
+            ],
+            "place_id": "ChIJUYEnWdZ4bIcRXQSg0Nxw30g",
+            "plus_code": {
+                "compound_code": "P2V6+QJ Denver, Colorado, United States",
+                "global_code": "85FQP2V6+QJ"
+            },
+            "rating": 4,
+            "reference": "ChIJUYEnWdZ4bIcRXQSg0Nxw30g",
+            "scope": "GOOGLE",
+            "types": [
+                "lodging",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "401 17th Street, Denver"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": 39.7441445,
+                    "lng": -104.9878065
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 39.74558503029149,
+                        "lng": -104.9865897197085
+                    },
+                    "southwest": {
+                        "lat": 39.74288706970849,
+                        "lng": -104.9892876802915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+            "id": "4ff8e5abdaf31ca916cfe997b49031b53b886470",
+            "name": "The Brown Palace Hotel and Spa, Autograph Collection",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 1365,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/112131940713721209591/photos\">The Brown Palace Hotel and Spa, Autograph Collection</a>"
+                    ],
+                    "photo_reference": "CmRaAAAAg7HmBIKyz4JL_zaifurGvRnCxiE2qg7xensCXimuQ0_JaZ4Ix0uMafBCifnh5jtDndFDtIiuJ2ncwrx-bQSxZxc2T9tAsprhnvHd_0rD-p79FDPep_1AC47hkKZuFcJMEhDPJULiOiyNwKO4XAENNyH8GhQUXXgIdvblbGuhNOAdIDJDKc02MA",
+                    "width": 1368
+                }
+            ],
+            "place_id": "ChIJ9dBRb9Z4bIcRD9UXGYyDqvY",
+            "plus_code": {
+                "compound_code": "P2V6+MV Denver, Colorado, United States",
+                "global_code": "85FQP2V6+MV"
+            },
+            "price_level": 3,
+            "rating": 4.6,
+            "reference": "ChIJ9dBRb9Z4bIcRD9UXGYyDqvY",
+            "scope": "GOOGLE",
+            "types": [
+                "spa",
+                "lodging",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "321 17th Street, Denver"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": 39.742273,
+                    "lng": -104.991928
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 39.7437252802915,
+                        "lng": -104.9907129697085
+                    },
+                    "southwest": {
+                        "lat": 39.7410273197085,
+                        "lng": -104.9934109302915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+            "id": "d601480c37069f5030c2b9dd89a525d1e54b3129",
+            "name": "Crowne Plaza Denver",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 1251,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/102609676289988281617/photos\">Crowne Plaza Denver</a>"
+                    ],
+                    "photo_reference": "CmRaAAAALpKKqzjif7ZeSTEpVGor6MvWM-HIiyFXH8r6_K9Uqm7o69yVqoWevDYyWgkR7CBoBv-B1MJ14WbQ4mEQXB6bTdsZZvA9g5QSEZQRAVIbXj2olXqI5A4gxBLCd4t7o-hKEhD1NY-oguuQC8lvHcbcitQdGhTYVw8RN8ttXsVagQd1z9SIG_dB8A",
+                    "width": 4000
+                }
+            ],
+            "place_id": "ChIJDY-k_tN4bIcR3ge2r3tcsmc",
+            "plus_code": {
+                "compound_code": "P2R5+W6 Denver, Colorado, United States",
+                "global_code": "85FQP2R5+W6"
+            },
+            "rating": 4.1,
+            "reference": "ChIJDY-k_tN4bIcR3ge2r3tcsmc",
+            "scope": "GOOGLE",
+            "types": [
+                "lodging",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "1450 Glenarm Place, Denver"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": 39.7456054,
+                    "lng": -104.9888127
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 39.7471650802915,
+                        "lng": -104.9877596197085
+                    },
+                    "southwest": {
+                        "lat": 39.7444671197085,
+                        "lng": -104.9904575802915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+            "id": "b67e67ef7c53e43a89235bb1d66c6f895f8dc18c",
+            "name": "Grand Hyatt Denver",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 593,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/111903113908324482630/photos\">Grand Hyatt Denver</a>"
+                    ],
+                    "photo_reference": "CmRaAAAAJW5nOcUWiz7q6qJIVbjma_NoRtFtLmrYKl5tLChKRV4z3lm66XK6RnwmZZRrmCVKJPC2UrM4EeLFkkwydOUV8SfzKuqNX4LifdEn8ftdyitgD7jhSyWbqBPinA6bLpktEhDi59yIiSM1TipLlZOeU4NuGhQJnrdE8CiHKulCMqK8ZV2dPpmETw",
+                    "width": 592
+                }
+            ],
+            "place_id": "ChIJD9OhG9d4bIcRY9HlDFVhKK0",
+            "plus_code": {
+                "compound_code": "P2W6+6F Denver, Colorado, United States",
+                "global_code": "85FQP2W6+6F"
+            },
+            "rating": 4.5,
+            "reference": "ChIJD9OhG9d4bIcRY9HlDFVhKK0",
+            "scope": "GOOGLE",
+            "types": [
+                "lodging",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "1750 Welton Street, Denver"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": 39.7434054,
+                    "lng": -104.9935598
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 39.7450568302915,
+                        "lng": -104.9919614697085
+                    },
+                    "southwest": {
+                        "lat": 39.7423588697085,
+                        "lng": -104.9946594302915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+            "id": "e960b6a9193dd1ea9e0dfbd533e48e7d2b2321dc",
+            "name": "Hyatt Regency Denver At Colorado Convention Center",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 720,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/113210515112171261653/photos\">Hyatt Regency Denver At Colorado Convention Center</a>"
+                    ],
+                    "photo_reference": "CmRaAAAAFdBlY3US6-6mw7VWxaVpp78Cy9-NlB4T08uVxI14AQIPMv60QZXYsza5qjovDFDJx5RS8FGAIEsJSAR7yohXO7K3KUOkq39X_eCHVK5WUXj2KaqFLPBckcjcnvPNBMZaEhDQDA4blXacEfh2afeW-n4TGhS61EAlmy_bVKUBusqe2Da9G8nhtg",
+                    "width": 1280
+                }
+            ],
+            "place_id": "ChIJYVuRFdF4bIcRhnRSkCCjaIE",
+            "plus_code": {
+                "compound_code": "P2V4+9H Denver, Colorado, United States",
+                "global_code": "85FQP2V4+9H"
+            },
+            "rating": 4.5,
+            "reference": "ChIJYVuRFdF4bIcRhnRSkCCjaIE",
+            "scope": "GOOGLE",
+            "types": [
+                "lodging",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "650 15th Street, Denver"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": 39.7431705,
+                    "lng": -104.9925935
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 39.74463678029149,
+                        "lng": -104.9910868197085
+                    },
+                    "southwest": {
+                        "lat": 39.74193881970849,
+                        "lng": -104.9937847802915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+            "id": "3cdd291a12ad9c60fe0bace5d159358c715683ec",
+            "name": "Homewood Suites by Hilton Denver Downtown-Convention Center, CO",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 1360,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/115355743163802320032/photos\">Homewood Suites by Hilton Denver Downtown-Convention Center, CO</a>"
+                    ],
+                    "photo_reference": "CmRaAAAAyd29kpNN-mnJSD_uMpwzlqpMF89QzE3IFkR1L0zk5kJPG0G4lEtR8BjR7otyvQoAK3TJgMWs2tVwNP8Fvsqh0a8Zo50K518HB-rM5UqqmQ-AbnpG7MEl0SWJP54WmMoSEhDHTJnw8uqRlMvR81R0BN6kGhTa95DS2HZkKsI__vwmg9z-nX2V-Q",
+                    "width": 1363
+                }
+            ],
+            "place_id": "ChIJMyzIXNF4bIcR76JiqLY6y5s",
+            "plus_code": {
+                "compound_code": "P2V4+7X Denver, Colorado, United States",
+                "global_code": "85FQP2V4+7X"
+            },
+            "rating": 4.5,
+            "reference": "ChIJMyzIXNF4bIcR76JiqLY6y5s",
+            "scope": "GOOGLE",
+            "types": [
+                "lodging",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "550 15th Street, Denver"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": 39.7426879,
+                    "lng": -104.9931487
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 39.7441401802915,
+                        "lng": -104.9919374197085
+                    },
+                    "southwest": {
+                        "lat": 39.7414422197085,
+                        "lng": -104.9946353802915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+            "id": "3583e99bb473e5fabcb07842ceb615f66a4d9849",
+            "name": "Hilton Garden Inn Denver Downtown",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 1361,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/108641051832721057085/photos\">Hilton Garden Inn Denver Downtown</a>"
+                    ],
+                    "photo_reference": "CmRaAAAAPg5YWYDRqgsVGenSRoBSAsJGuybHgobqpJDMJS8YStQKDVJxCLavKIfnO2t_Oz3jnCs3ppr5u40kbyIX1a_OCYKoPobof2CGOD2lxPJqJibC7Y59UnY_pxiznmWkNNwAEhA4gvqLCh-khFu2S5K3FRDIGhRnM8poK8wsZ3DrPjpY4uyr20Mx5A",
+                    "width": 2000
+                }
+            ],
+            "place_id": "ChIJD7YRYdF4bIcR_s4Nv0GfpGw",
+            "plus_code": {
+                "compound_code": "P2V4+3P Denver, Colorado, United States",
+                "global_code": "85FQP2V4+3P"
+            },
+            "rating": 4.2,
+            "reference": "ChIJD7YRYdF4bIcR_s4Nv0GfpGw",
+            "scope": "GOOGLE",
+            "types": [
+                "lodging",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "1400 Welton Street, Denver"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": 39.7440882,
+                    "lng": -104.9948037
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 39.7455323802915,
+                        "lng": -104.9935780697085
+                    },
+                    "southwest": {
+                        "lat": 39.7428344197085,
+                        "lng": -104.9962760302915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+            "id": "8a6924b62d36164db5ce65e8842328ca8c7e7734",
+            "name": "Embassy Suites by Hilton Denver Downtown Convention Center",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 854,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/109837973299836357721/photos\">Embassy Suites by Hilton Denver Downtown Convention Center</a>"
+                    ],
+                    "photo_reference": "CmRaAAAAonOASmw8AFZw0avqJsJ4JtvhKNfHwx-cGje5VB-mzAz1uAeFUjJ2GvHZGj-3rpCiSO2h6H7u4ZwLG8b_QgHgcKsloKnIvf46s0PZD_BRryfucDkARrAVHFOGpHX7RInNEhBeDM0wUQIwEm68pOqvlUUUGhTASVtpS1ltILPyafkhkK9Th0M8Zg",
+                    "width": 1280
+                }
+            ],
+            "place_id": "ChIJjTsJpdF4bIcR2_djIN_EhVc",
+            "plus_code": {
+                "compound_code": "P2V4+J3 Denver, Colorado, United States",
+                "global_code": "85FQP2V4+J3"
+            },
+            "rating": 4.3,
+            "reference": "ChIJjTsJpdF4bIcR2_djIN_EhVc",
+            "scope": "GOOGLE",
+            "types": [
+                "lodging",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "1420 Stout Street, Denver"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": 39.7455648,
+                    "lng": -104.9852012
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 39.7467975302915,
+                        "lng": -104.9838512697085
+                    },
+                    "southwest": {
+                        "lat": 39.7440995697085,
+                        "lng": -104.9865492302915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+            "id": "d6e94f1086eae07361fb90ed94edd42ad7e54300",
+            "name": "Hampton Inn & Suites Denver-Downtown",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 1333,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/102071853121657049794/photos\">Hampton Inn &amp; Suites Denver-Downtown</a>"
+                    ],
+                    "photo_reference": "CmRaAAAAjkY-rIGbJbxYNtmq43DXIknaRF1FzICap60z0uLKazUrDGub3h_lBm79OwLLbsRZ9jw0CO3FnNGijqhyyLwfsCDZYpS3kb2WBJL6TH0L8cmr9hQ98fZN85RMdNtkIB8-EhA-Or5cuoSJtbJMqobuPyphGhTu1kyMFipM84GrsZYQJuPCcvMf_Q",
+                    "width": 1335
+                }
+            ],
+            "place_id": "ChIJDUJ70Cl5bIcRrrE_lFPk55M",
+            "plus_code": {
+                "compound_code": "P2W7+6W Denver, Colorado, United States",
+                "global_code": "85FQP2W7+6W"
+            },
+            "rating": 4.3,
+            "reference": "ChIJDUJ70Cl5bIcRrrE_lFPk55M",
+            "scope": "GOOGLE",
+            "types": [
+                "lodging",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "1845 Sherman Street, Denver"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": 39.74682540000001,
+                    "lng": -104.9922542
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 39.7482486802915,
+                        "lng": -104.9908097697085
+                    },
+                    "southwest": {
+                        "lat": 39.7455507197085,
+                        "lng": -104.9935077302915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+            "id": "126d0df5126a2aadef41c68ff599d2a706c8063d",
+            "name": "Magnolia Hotel Denver, a Tribute Portfolio Hotel",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 438,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/107532186255612228458/photos\">Magnolia Hotel Denver, a Tribute Portfolio Hotel</a>"
+                    ],
+                    "photo_reference": "CmRaAAAAHKOHr5nb6w0Rs5c6CxLdvJSV5Vsgi3SZDSbTBR7YJUcX2-udomcG6ONjH1l39Gk3ZqWtLHS8XvHP_QWxky5ko7qhjZASM0ljJ4_ILtcsex9NHnMIwatt9ayx8b5Qj2TQEhD9B3QIeLo9E9Lr2gAkSb77GhTzKcFRtR30TK7jKcEJO52yZkas4g",
+                    "width": 600
+                }
+            ],
+            "place_id": "ChIJmZlXutB4bIcRFEo8LD4pmcQ",
+            "plus_code": {
+                "compound_code": "P2W5+P3 Denver, Colorado, United States",
+                "global_code": "85FQP2W5+P3"
+            },
+            "price_level": 3,
+            "rating": 4.2,
+            "reference": "ChIJmZlXutB4bIcRFEo8LD4pmcQ",
+            "scope": "GOOGLE",
+            "types": [
+                "lodging",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "818 17th Street, Denver"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": 39.743428,
+                    "lng": -104.9912257
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 39.7447620302915,
+                        "lng": -104.9896389697085
+                    },
+                    "southwest": {
+                        "lat": 39.7420640697085,
+                        "lng": -104.9923369302915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "0fe6985303ae24bc513246559df680674570e7e3",
+            "name": "Hot Topic",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 3144,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/117711220499010239186/photos\">Tina Pino</a>"
+                    ],
+                    "photo_reference": "CmRaAAAAvpgrxhqpK_MnPj7UugYQAPsbQPDcQXTuxlSUA4VclSXocogYr3y7xhM1BFgqpVEeWaG4zIaJ_5jRe9mTiAGFUCQHu_YwuFgKeORUMyQ-GL8kwN2JtwETTzRf7WDA5Z7IEhCIK8sd2GERqXqCNkZpuxP8GhQwcYmJ1rj_5wzhTNKAWKvpNSEg-Q",
+                    "width": 4192
+                }
+            ],
+            "place_id": "ChIJY5watdZ4bIcRRWKGPGPKNDw",
+            "plus_code": {
+                "compound_code": "P2V5+9G Denver, Colorado, United States",
+                "global_code": "85FQP2V5+9G"
+            },
+            "price_level": 2,
+            "rating": 4.1,
+            "reference": "ChIJY5watdZ4bIcRRWKGPGPKNDw",
+            "scope": "GOOGLE",
+            "types": [
+                "clothing_store",
+                "electronics_store",
+                "home_goods_store",
+                "store",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "500 16th Street Mall, Denver"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": 39.7454298,
+                    "lng": -104.9896355
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 39.7466976802915,
+                        "lng": -104.9883882697085
+                    },
+                    "southwest": {
+                        "lat": 39.7439997197085,
+                        "lng": -104.9910862302915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+            "id": "8c680de35b11589745b2c3fd5dc7252a8057921c",
+            "name": "FedEx Office Print & Ship Center",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 683,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/111870270239983127854/photos\">FedEx Office Print &amp; Ship Center</a>"
+                    ],
+                    "photo_reference": "CmRaAAAAInI4j8TfuyUswRvJWAzPPqcqEluFITc5BN4PUdTLb0puhrSIwikdbfzn-wsoOcwg5Kzdt5A9hyOxb90EPpVrAIAzoWgmvTfsSyI8BKjDnlv2l5LaaFF5FRbJj3Xdmu9cEhCXzviQ5Sd3b9lLqN52Yc7DGhRXwHKN6I5GUHd1kzHYIu_Ydas2tQ",
+                    "width": 1024
+                }
+            ],
+            "place_id": "ChIJUz_B49Z4bIcRaRf7aA7tudY",
+            "plus_code": {
+                "compound_code": "P2W6+54 Denver, Colorado, United States",
+                "global_code": "85FQP2W6+54"
+            },
+            "price_level": 2,
+            "rating": 3.2,
+            "reference": "ChIJUz_B49Z4bIcRaRf7aA7tudY",
+            "scope": "GOOGLE",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "555 17th Street Suite 190, Denver"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": 39.743124,
+                    "lng": -104.990702
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 39.7447257802915,
+                        "lng": -104.9896120697085
+                    },
+                    "southwest": {
+                        "lat": 39.7420278197085,
+                        "lng": -104.9923100302915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/movies-71.png",
+            "id": "77cb01ab6fe6cbe57a9c4d4c6fc5eb90e53dd8c5",
+            "name": "United Artists Denver Pavilions 15",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 3024,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/105206760715411325230/photos\">Jason MacFarlane</a>"
+                    ],
+                    "photo_reference": "CmRaAAAAeO19Atlv0SPs9Wi4rh7vjjBvMCZE6PSaXDyv1lm_MMczqzMsyoTJiwUGfb9IHguvm3R2qdsMaCtABvJ6-pb9WkT0ftlK4SDFrQsrMaMzbzqX-EFfLSl56VpLe1KngfxUEhC7bA86KF1ayza5y9j1r3LbGhTBR7A8H4IjJOdCNIuvpkvmq6rbyA",
+                    "width": 4032
+                }
+            ],
+            "place_id": "ChIJY5watdZ4bIcR5oMeV8cH0cE",
+            "plus_code": {
+                "compound_code": "P2V5+6P Denver, Colorado, United States",
+                "global_code": "85FQP2V5+6P"
+            },
+            "rating": 4.1,
+            "reference": "ChIJY5watdZ4bIcR5oMeV8cH0cE",
+            "scope": "GOOGLE",
+            "types": [
+                "movie_theater",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "Mall #310, 500 16th Street Mall, Denver"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": 39.74305810000001,
+                    "lng": -104.9903365
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 39.7445853802915,
+                        "lng": -104.9892403697085
+                    },
+                    "southwest": {
+                        "lat": 39.7418874197085,
+                        "lng": -104.9919383302915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+            "id": "48c4b26d7d06987130396b83da25cbb7095fc266",
+            "name": "Maggiano's Little Italy",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 2160,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/108227181384974141111/photos\">Shee Anc</a>"
+                    ],
+                    "photo_reference": "CmRaAAAAVN0oeHh2BpwstnismSJlEefBovarnoMxg5YPue7iEHh0EEKR23qokV8cSeYlCjpYCc9s4lO08o3LXX_I_xgj4Y0gA3fVP_Oia2gC0War1PrRRl-oxF80CRcJ74mkRALbEhDFtDsvwmK94msysNy8fwmSGhS2yxMh2ZsQPT5K4mE0_dHLqBJYSw",
+                    "width": 3264
+                }
+            ],
+            "place_id": "ChIJY5watdZ4bIcRIDAE-njFBdA",
+            "plus_code": {
+                "compound_code": "P2V5+6V Denver, Colorado, United States",
+                "global_code": "85FQP2V5+6V"
+            },
+            "price_level": 2,
+            "rating": 4.4,
+            "reference": "ChIJY5watdZ4bIcRIDAE-njFBdA",
+            "scope": "GOOGLE",
+            "types": [
+                "restaurant",
+                "bar",
+                "point_of_interest",
+                "food",
+                "establishment"
+            ],
+            "vicinity": "500 16th Street Mall #150, Denver"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": 39.74397130000001,
+                    "lng": -104.9913749
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 39.7449927802915,
+                        "lng": -104.9897696697085
+                    },
+                    "southwest": {
+                        "lat": 39.7422948197085,
+                        "lng": -104.9924676302915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+            "id": "28c610db49b221616315c6875907d4629c0e9131",
+            "name": "Lucky Strike Denver",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 768,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/113342248603192799363/photos\">Lucky Strike Denver</a>"
+                    ],
+                    "photo_reference": "CmRaAAAAohvFZER-RwzoV1G0lMBcKK_4reUZrQ7ikhvJ8IrIQyQIsuochHGEslXb9NIwXiA0rMH-wc8tS5uLyfN0nLW-cnWNPSfX-f1ZAdt3aG0CKxteyk5-jYDn8AgwOarryY6DEhDWqWoKO7rvOeBQWr1NCDveGhRt91_Y_k3g39sEvDO5C3CCJJvY7A",
+                    "width": 1024
+                }
+            ],
+            "place_id": "ChIJY5watdZ4bIcRpVsb-V6OzGU",
+            "plus_code": {
+                "compound_code": "P2V5+HF Denver, Colorado, United States",
+                "global_code": "85FQP2V5+HF"
+            },
+            "price_level": 1,
+            "rating": 3.9,
+            "reference": "ChIJY5watdZ4bIcRpVsb-V6OzGU",
+            "scope": "GOOGLE",
+            "types": [
+                "bowling_alley",
+                "bar",
+                "restaurant",
+                "point_of_interest",
+                "food",
+                "establishment"
+            ],
+            "vicinity": "500 16th Street Mall #340, Denver"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": 39.7434273,
+                    "lng": -104.993672
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 39.7450415802915,
+                        "lng": -104.9919829697085
+                    },
+                    "southwest": {
+                        "lat": 39.7423436197085,
+                        "lng": -104.9946809302915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+            "id": "5abac9aa05dd230f6ee7e2c0e849a95528a75d53",
+            "name": "Altitude Restaurant",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 3024,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/110922179931240501761/photos\">Riku Inoue</a>"
+                    ],
+                    "photo_reference": "CmRaAAAAlCRk4TAmNKq2G6d45QvAJ6ihOOrJICLdA1LKfSPQqL5yjrXSPGnmniQGKKO1U1g-z099J5MkRfbB_RH4_hAOLh1XaqxNsb2q-220bgZY23fZ3qpFb7TN8rpvNhVw7ZAUEhCK5pjDw5vf3S4D2_WUF7TcGhRuxz4qrhnFyM_6SqZLK_CJxKcUDA",
+                    "width": 4032
+                }
+            ],
+            "place_id": "ChIJYVuRFdF4bIcRPxui_Orr53I",
+            "plus_code": {
+                "compound_code": "P2V4+9G Denver, Colorado, United States",
+                "global_code": "85FQP2V4+9G"
+            },
+            "rating": 3.3,
+            "reference": "ChIJYVuRFdF4bIcRPxui_Orr53I",
+            "scope": "GOOGLE",
+            "types": [
+                "restaurant",
+                "point_of_interest",
+                "food",
+                "establishment"
+            ],
+            "vicinity": "650 15th Street, Denver"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": 39.7442397,
+                    "lng": -104.9901931
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 39.7455371802915,
+                        "lng": -104.9887779697085
+                    },
+                    "southwest": {
+                        "lat": 39.7428392197085,
+                        "lng": -104.9914759302915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+            "id": "5e141568e43ee990f015f74ec6fb03ed572dd1e0",
+            "name": "Paramount Theatre",
+            "photos": [
+                {
+                    "height": 3024,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/101367021227926095278/photos\">Joe Adams</a>"
+                    ],
+                    "photo_reference": "CmRaAAAAklZM7A0zZdnr9gS3sUC2Y_p2Hj2HEtJXMpMfb6hm_ksaxXDLLZEacAEJaJUgdVAJ3WooEh1zlVXyjoYQJ0U08_rTluU1TVZZBtXyJ-v5jsHQDNhR6TF9vJwuN-CVcx3sEhBI4pBCguM5kK8XTfjf_HeJGhSx_67-vmJIA2sqQMqRZSUzNW-j-Q",
+                    "width": 4032
+                }
+            ],
+            "place_id": "ChIJ93pnwdZ4bIcR5sMVUl558fE",
+            "plus_code": {
+                "compound_code": "P2V5+MW Denver, Colorado, United States",
+                "global_code": "85FQP2V5+MW"
+            },
+            "price_level": 2,
+            "rating": 4.5,
+            "reference": "ChIJ93pnwdZ4bIcR5sMVUl558fE",
+            "scope": "GOOGLE",
+            "types": [
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "1621 Glenarm Place, Denver"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": 39.7340952,
+                    "lng": -104.9713695
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 39.7603811,
+                        "lng": -104.940634
+                    },
+                    "southwest": {
+                        "lat": 39.6969869,
+                        "lng": -105.0181369
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+            "id": "c25f5b2320b80ec8da9610e0bfd51cdb25fb72dd",
+            "name": "Central",
+            "photos": [
+                {
+                    "height": 2240,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/117255285281392928372/photos\">Jackson Marshall</a>"
+                    ],
+                    "photo_reference": "CmRaAAAA9d8z1LVn8cRIZlxM5GIELvy9-I3yACgv6WwwO_lxefyB-CQgsVvfGIW9DANjStTE4ukvxmiG04pY45XyA-fnT4fMpXpQiQ7i3P3Cuc2vd7zcko014Fgz1EAuCdt4in74EhCrT11gOWbKL3i2Zmxlsh5eGhTT4WJpuSOFg_9fVfk9rKCgqnlpNQ",
+                    "width": 1344
+                }
+            ],
+            "place_id": "ChIJ8UxaWjZ_bIcRslJSzsQj-sI",
+            "reference": "ChIJ8UxaWjZ_bIcRslJSzsQj-sI",
+            "scope": "GOOGLE",
+            "types": [
+                "neighborhood",
+                "political"
+            ],
+            "vicinity": "Denver"
+        }
+    ],
+    "status": "OK"
+}
