@@ -18,7 +18,7 @@ feature "As a visitor" do
     click_on "Create User"
 
     expect(current_path).to eq(register_path)
-    expect(page).to have_content("phone number already in use")
+    expect(page).to have_content("Invalid information")
   end
 
 end

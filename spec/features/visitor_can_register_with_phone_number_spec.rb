@@ -22,6 +22,7 @@ feature "As a visitor" do
       click_on "Verify"
 
       expect(current_path).to eq(register_path)
+      expect(page).to have_content("Verification code was incorrect. Please re-enter information")
     end
 
   end

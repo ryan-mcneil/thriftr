@@ -10,7 +10,7 @@ class VerifyController < ApplicationController
       redirect_to root_path
     else
       User.find(session[:user_id]).delete
-      flash[:error] = "Verification code was incorrect. Please re-enter"
+      flash[:error] = "Verification code was incorrect. Please re-enter information"
       redirect_to register_path
     end
   end
