@@ -33,6 +33,15 @@ Shoulda::Matchers.configure do |config|
   end
 end
 
+SimpleCov.start "rails" do
+  add_filter "app/channels/application_cable/channel.rb"
+  add_filter "app/channels/application_cable/connection.rb"
+  add_filter "app/helpers/application_helper.rb"
+  add_filter "app/jobs/application_job.rb"
+  add_filter "app/mailers/application_mailer.rb"
+end
+
+
 RSpec.configure do |config|
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
 
@@ -43,4 +52,10 @@ RSpec.configure do |config|
   config.infer_spec_type_from_file_location!
 
   config.filter_rails_from_backtrace!
+
+end
+
+def stub_twilio_api
+  stub_request(:post, "https://api.twilio.com/2010-04-01/Accounts/AC119493e137c10b2df84ea1a54bb7fc10/Messages.json").to_return(body: File.read("./spec/fixtures/twilio_response.json"))
+
 end

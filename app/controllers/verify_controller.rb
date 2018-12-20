@@ -5,8 +5,14 @@ class VerifyController < ApplicationController
   end
 
   def create
-
-    redirect_to dashboard_path
+    if params[:q] == session[:code]
+      current_user.update(verified: true)
+      redirect_to root_path
+    else
+      flash[:error] = "Incorrect, we are sending you a new code"
+      twilio_verify
+      redirect_to verify_path
+    end
   end
 
 end

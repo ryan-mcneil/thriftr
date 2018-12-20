@@ -19,7 +19,7 @@ RSpec.describe TwilioService do
   it 'can send_verification_code' do
     VCR.use_cassette("twilio_verify_cassette") do
       number = "6182460553"
-      code = "123456"
+      code = "43819"
       service = TwilioService.new
       response = service.send_verification_code(number,code)
 
