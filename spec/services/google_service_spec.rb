@@ -1,7 +1,8 @@
 require 'rails_helper'
 
 describe GoogleService do
-  subject { GoogleService.new }
+  coords = "39.742905,-104.989545"
+  subject { GoogleService.new(coords) }
 
   it 'exists' do
     expect(subject).to be_a GoogleService

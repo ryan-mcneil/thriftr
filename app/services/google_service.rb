@@ -1,5 +1,9 @@
 class GoogleService
 
+  def initialize(coords)
+    @coords = coords
+  end
+
   def location_search
     results = conn.get "/maps/api/place/nearbysearch/json", opts
 
@@ -14,9 +18,14 @@ class GoogleService
 
   def opts
     {
-      location: "39.742905,-104.989545",
+      location: @coords,
       radius: 500,
       key: ENV['GOOGLE_API_KEY']
     }
   end
+
+  def get_current_position
+    "39.742905,-104.989545"
+  end
+
 end

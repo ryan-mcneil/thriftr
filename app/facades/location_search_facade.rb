@@ -1,11 +1,12 @@
 class LocationSearchFacade
 
-  def initialize
+  def initialize(coords)
+    @coords = coords
     @types = ["restaurant", "store", "movie_theater", "bar"]
   end
 
   def locations
-    location_data = GoogleService.new.location_search
+    location_data = GoogleService.new(@coords).location_search
 
     location_data.map do |location|
       types = find_types(location[:types])
@@ -25,4 +26,5 @@ class LocationSearchFacade
       types
     end
   end
+  
 end

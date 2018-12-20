@@ -22,4 +22,8 @@ describe 'a user' do
     end
   end
 
+  it 'gets an error message if no places are nearby' do
+
+  end
+
 end

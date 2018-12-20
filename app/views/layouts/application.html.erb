@@ -12,4 +12,23 @@
   <body>
     <%= yield %>
   </body>
+
+  <script type="text/javascript">
+
+    function getLocation() {
+      debugger
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+      }
+    }
+
+    function showPosition(position) {
+      var loc = position.coords.latitude + ',' + position.coords.longitude;
+      debugger
+      window.location.href=`/results?location=${loc}`;
+    }
+  </script>
+
 </html>

@@ -2,7 +2,8 @@ require 'rails_helper'
 
 describe LocationSearchFacade do
 
-  let :subject { LocationSearchFacade.new }
+  coords = "39.742905,-104.989545"
+  let :subject { LocationSearchFacade.new(coords) }
 
   it 'exists' do
     expect(subject).to be_a LocationSearchFacade

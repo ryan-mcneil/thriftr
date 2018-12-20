@@ -1,6 +1,6 @@
 class ResultsController < ApplicationController
   def index
-    @facade = LocationSearchFacade.new
+    @facade = LocationSearchFacade.new(params[:location])
   end
 
 end
