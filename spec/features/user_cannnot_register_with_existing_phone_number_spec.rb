@@ -2,7 +2,8 @@ require 'rails_helper'
 
 feature "As a visitor" do
 
-  scenario "they can register with their phone number" do
+  scenario "they cannot register with an existing phone number" do
+    user = User.create(username: "ted", phone_number: "123")
     visit root_path
 
     expect(page).to have_content("Register here")
@@ -13,14 +14,11 @@ feature "As a visitor" do
     expect(page).to have_content("Sign up for Thriftr")
 
     fill_in 'user[username]', with: "Bob"
-    fill_in 'user[phone_number]', with: '6182460553'
+    fill_in 'user[phone_number]', with: '123'
     click_on "Create User"
 
-    fill_in :q, with: "12345"
-    click_on "Verify"
-
-    expect(current_path).to eq(dashboard_path)
-
+    expect(current_path).to eq(register_path)
+    expect(page).to have_content("phone number already in use")
   end
 
 end

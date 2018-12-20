@@ -4,4 +4,9 @@ class VerifyController < ApplicationController
 
   end
 
+  def create
+
+    redirect_to dashboard_path
+  end
+
 end

@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2018_12_19_201931) do
     t.string "username"
     t.string "phone_number"
     t.string "ynab_token"
+    t.boolean "verified", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

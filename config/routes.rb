@@ -9,8 +9,9 @@ Rails.application.routes.draw do
 
   get '/register', to: 'users#new'
   get '/verify', to: 'verify#index'
+  post '/verify', to: 'verify#create'
 
-  resources :users, only: [:create]
+  resources :users, only: [:create, :update]
 
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

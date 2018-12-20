@@ -4,6 +4,7 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.string :username
       t.string :phone_number
       t.string :ynab_token
+      t.boolean :verified, default: false
       t.timestamps
     end
   end

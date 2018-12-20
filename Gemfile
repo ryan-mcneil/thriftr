@@ -14,6 +14,7 @@ gem 'faraday'
 gem 'figaro'
 gem 'thin'
 gem 'omniauth-ynab'
+gem 'twilio-ruby', '~> 5.18.0'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
