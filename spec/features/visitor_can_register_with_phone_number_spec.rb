@@ -21,7 +21,7 @@ feature "As a visitor" do
       fill_in :q, with: "19035"
       click_on "Verify"
 
-      expect(current_path).to eq(verify_path)
+      expect(current_path).to eq(register_path)
     end
 
   end

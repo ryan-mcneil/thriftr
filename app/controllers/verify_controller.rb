@@ -9,9 +9,9 @@ class VerifyController < ApplicationController
       current_user.update(verified: true)
       redirect_to root_path
     else
-      flash[:error] = "Incorrect, we are sending you a new code"
-      twilio_verify
-      redirect_to verify_path
+      User.find(session[:user_id]).delete
+      flash[:error] = "Verification code was incorrect. Please re-enter"
+      redirect_to register_path
     end
   end
 
