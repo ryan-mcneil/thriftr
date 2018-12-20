@@ -3,7 +3,7 @@ require 'rails_helper'
 feature "As a visitor" do
 
 
-  scenario "they cannot register with incorrect verification code" do
+  scenario "they cannot register with incorrect verification code", :js do
     VCR.use_cassette("user_registers_with_phone_number_cassette") do
       visit root_path
 

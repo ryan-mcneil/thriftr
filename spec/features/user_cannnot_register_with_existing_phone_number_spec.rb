@@ -2,7 +2,7 @@ require 'rails_helper'
 
 feature "As a visitor" do
 
-  scenario "they cannot register with an existing phone number" do
+  scenario "they cannot register with an existing phone number", :js do
     user = User.create(username: "ted", phone_number: "123")
     visit root_path
 
