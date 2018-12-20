@@ -1,34 +1,38 @@
 require 'rails_helper'
 
 feature "As a visitor" do
-
-  xscenario "visit login and use YNAB OAuth" do
+  xscenario "can login with phone number", :js do
 
     visit root_path
 
-    expect(page).to have_content("Please enter your phone number")
-    expect(page).to have_button("Log in with YNAB")
-    #We think the repsonse is looking for https and local host is http
-    fill_in :phone_number, with: 6182460553
-    click_on "Log in with YNAB"
+    expect(page).to have_button("Login")
 
-    expect(current_path).to eq(phone_path)
+    fill_in :q, with: 6182460553
+    click_on "Login"
+
+    expect(current_path).to eq(login_path)
 
   end
+  scenario "cannot login with phone number that doesn't exist in the db", :js do
 
-  xscenario "phone number" do
+    visit root_path
 
-    visit phone_path
+    expect(page).to have_button("Login")
 
-    fill_in :phone_number, with: 6182460553
-    click_on "Submit"
+    fill_in :q, with: 6182460553
+    click_on "Login"
 
-    expect(current_path).to eq(phone_path)
-    # I receive a text message with a 6-digit code
-    # And enter the 6-digit code into the empty code field and click “Submit”
-    fill_in :phone_code, with: 123456
-    click_on "Submit"
+    expect(current_path).to eq(root_path)
+    expect(page).to have_content("Try again!")
+  end
+  scenario "user can login with phone number and oauth", :js do
+    user = User.create(username: "godzilla", phone_number: "3038853559")
 
-    expect(current_path).to eq(dashboard_path)
+    visit root_path
+
+    fill_in :q, with: 3038853559
+    click_on "Login"
+
+    expect(current_path).to eq(login_path)
   end
 end

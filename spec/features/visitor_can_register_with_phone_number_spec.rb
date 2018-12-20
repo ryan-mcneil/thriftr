@@ -10,7 +10,7 @@ feature "As a visitor" do
       expect(page).to have_content("Register here")
       click_on "Register here"
 
-      expect(current_path).to eq('/register')
+      expect(current_path).to eq(new_user_path)
 
       expect(page).to have_content("Sign up for Thriftr")
 
@@ -21,7 +21,7 @@ feature "As a visitor" do
       fill_in :q, with: "19035"
       click_on "Verify"
 
-      expect(current_path).to eq(register_path)
+      expect(current_path).to eq(new_user_path)
       expect(page).to have_content("Verification code was incorrect. Please re-enter information")
     end
 
