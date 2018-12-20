@@ -1,8 +1,8 @@
 Rails.application.configure do
 
-  Thriftr::Application.configure do
-    config.force_ssl = true
-  end
+  # Thriftr::Application.configure do
+  #   config.force_ssl = true
+  # end
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
