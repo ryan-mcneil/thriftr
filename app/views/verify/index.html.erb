@@ -1,0 +1,6 @@
+<h1>To complete registration enter code below below</h1>
+
+<%= form_tag :verify, method: :post do %>
+  <%= text_field_tag :q, "Enter Code"%>
+  <%= submit_tag "Verify" %>
+<%end%>
