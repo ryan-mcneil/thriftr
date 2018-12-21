@@ -9,7 +9,7 @@ feature "As a visitor" do
     expect(page).to have_content("Register here")
     click_on "Register here"
 
-    expect(current_path).to eq('/register')
+    expect(current_path).to eq(new_user_path)
 
     expect(page).to have_content("Sign up for Thriftr")
 
@@ -17,8 +17,8 @@ feature "As a visitor" do
     fill_in 'user[phone_number]', with: '123'
     click_on "Create User"
 
-    expect(current_path).to eq(register_path)
-    expect(page).to have_content("phone number already in use")
+    expect(current_path).to eq(new_user_path)
+    expect(page).to have_content("Invalid information")
   end
 
 end

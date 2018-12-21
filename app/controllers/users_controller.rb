@@ -9,10 +9,10 @@ class UsersController < ApplicationController
     if user.save
       session[:user_id] = user.id
       twilio_verify
-      redirect_to verify_path
+      redirect_to register_path
     else
       flash[:error] = "Invalid information"
-      redirect_to register_path
+      redirect_to new_user_path
     end
   end
 

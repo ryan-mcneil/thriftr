@@ -1,5 +1,9 @@
-<%= button_to "Log in with YNAB", '/ynab', method: 'get' %>
 
-<%= link_to "Register here", '/register' %>
+<%= form_tag :login, method: :get, action: :new do %>
+  <%= text_field_tag :q, "Phone Number"%>
+  <%= submit_tag "Login" %>
+<%end%>
+
+<%= link_to "Register here", new_user_path %>
 
 <%= link_to "Privacy Policy", '/privacy' %>
