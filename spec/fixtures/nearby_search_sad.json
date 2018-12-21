@@ -1,0 +1,115 @@
+{
+    "html_attributions": [],
+    "results": [
+        {
+            "geometry": {
+                "location": {
+                    "lat": 39.5613007,
+                    "lng": -104.6156334
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 39.5626177302915,
+                        "lng": -104.6142433697085
+                    },
+                    "southwest": {
+                        "lat": 39.5599197697085,
+                        "lng": -104.6169413302915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+            "id": "82ebefa7ed42ab68156934092a0c293b636db82f",
+            "name": "US Executive Limousine Service",
+            "photos": [
+                {
+                    "height": 300,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/112008935799476145779/photos\">US Executive Limousine Service</a>"
+                    ],
+                    "photo_reference": "CmRaAAAADqXBcpetOUPLRul8mvMAoEElpRQ6KsE2CcK3li8Nn0vfb8G5P076JvlQJykvK-vdcrTYhmyrllHMx6tE4YgT8Ykku_NvgwBczDY975YVxTm-SjqRF8x2DDZI7iSAmnAcEhD_pqawY0wf11uRHyGqm8MFGhTPM7JJB_t9P0ezNphm4y2T74Leeg",
+                    "width": 340
+                }
+            ],
+            "place_id": "ChIJGbO0YxUBToYRA82Bq0FDgAs",
+            "plus_code": {
+                "compound_code": "H96M+GP Aurora, Colorado, United States",
+                "global_code": "85FQH96M+GP"
+            },
+            "reference": "ChIJGbO0YxUBToYRA82Bq0FDgAs",
+            "scope": "GOOGLE",
+            "types": [
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "2499 Sagebrush Street, Parker"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": 39.56348789999999,
+                    "lng": -104.6204422
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 39.5648339802915,
+                        "lng": -104.6190759197085
+                    },
+                    "southwest": {
+                        "lat": 39.5621360197085,
+                        "lng": -104.6217738802915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+            "id": "577a9ea500cc6c917caa6f832a3341a9eeb5da60",
+            "name": "6773.A152 (#5)",
+            "place_id": "ChIJKV3WNOXzbIcRE3vmAC-LUqE",
+            "plus_code": {
+                "compound_code": "H97H+9R Aurora, Colorado, United States",
+                "global_code": "85FQH97H+9R"
+            },
+            "reference": "ChIJKV3WNOXzbIcRE3vmAC-LUqE",
+            "scope": "GOOGLE",
+            "types": [
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "2499-2301 Antelope Ridge Trail, Parker"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": 39.5638742,
+                    "lng": -104.621762
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 39.5650912302915,
+                        "lng": -104.6197476697085
+                    },
+                    "southwest": {
+                        "lat": 39.5623932697085,
+                        "lng": -104.6224456302915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+            "id": "3df9d65fcf4390120fb77d631d4911336ab1b708",
+            "name": "Colorful Image Photography",
+            "place_id": "ChIJS_K8I3DybIcRoQEtIcYYzFQ",
+            "plus_code": {
+                "compound_code": "H97H+G7 Aurora, Colorado, United States",
+                "global_code": "85FQH97H+G7"
+            },
+            "reference": "ChIJS_K8I3DybIcRoQEtIcYYzFQ",
+            "scope": "GOOGLE",
+            "types": [
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "2387 Antelope Ridge Trail, Parker"
+        }
+    ],
+    "status": "OK"
+}

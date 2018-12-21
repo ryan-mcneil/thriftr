@@ -1,9 +1,16 @@
+<div class="nav">
+  <h1 class="logo">Thriftr</h1>
+</div>
 <h2>Select Your Current Location</h2>
 
 <div class="locations">
-  <% @facade.locations.each do |location| %>
-    <div class="location">
-      <p><%= link_to location.name, dashboard_path %></p>
-    </div>
+  <% if @facade.locations.size > 0 %>
+    <% @facade.locations.each do |location| %>
+      <div class="location">
+        <p><%= link_to location.name, dashboard_path %></p>
+      </div>
+    <% end %>
+  <% else %>
+    <p>No Locations Detected Nearby</p>
   <% end %>
 </div>
