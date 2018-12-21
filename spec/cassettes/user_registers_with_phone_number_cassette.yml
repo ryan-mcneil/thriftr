@@ -5,7 +5,7 @@ http_interactions:
     uri: https://api.twilio.com/2010-04-01/Accounts/<TWILIO_ACCOUNT_SID>/Messages.json
     body:
       encoding: UTF-8
-      string: Body=19035&From=%2B16183900798&To=%2B16182460553
+      string: Body=12345&From=%2B16183900798&To=%2B16182460553
     headers:
       User-Agent:
       - twilio-ruby/5.18.0 (ruby/x86_64-darwin17 2.4.1-p111)
@@ -38,15 +38,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 20 Dec 2018 01:05:57 GMT
+      - Fri, 21 Dec 2018 22:10:10 GMT
       Strict-Transport-Security:
       - max-age=31536000
       Twilio-Concurrent-Requests:
       - '1'
       Twilio-Request-Duration:
-      - '0.081'
+      - '0.094'
       Twilio-Request-Id:
-      - RQ00706009efe145d6a84a596cfe97c48d
+      - RQbdf8896d0ee349e4bdcfde31fb9a1fd9
       X-Powered-By:
       - AT-5000
       X-Shenanigans:
@@ -57,83 +57,15 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"sid": "SM652cffe4b64a4a77a05afb16f610eb6f", "date_created": "Thu,
-        20 Dec 2018 01:05:57 +0000", "date_updated": "Thu, 20 Dec 2018 01:05:57 +0000",
+      string: '{"sid": "SMce5745c7680441498503b0e43250a3f5", "date_created": "Fri,
+        21 Dec 2018 22:10:10 +0000", "date_updated": "Fri, 21 Dec 2018 22:10:10 +0000",
         "date_sent": null, "account_sid": "<TWILIO_ACCOUNT_SID>", "to": "+16182460553",
         "from": "+16183900798", "messaging_service_sid": null, "body": "Sent from
-        your Twilio trial account - 19035", "status": "queued", "num_segments": "1",
+        your Twilio trial account - 12345", "status": "queued", "num_segments": "1",
         "num_media": "0", "direction": "outbound-api", "api_version": "2010-04-01",
         "price": null, "price_unit": "USD", "error_code": null, "error_message": null,
-        "uri": "/2010-04-01/Accounts/<TWILIO_ACCOUNT_SID>/Messages/SM652cffe4b64a4a77a05afb16f610eb6f.json",
-        "subresource_uris": {"media": "/2010-04-01/Accounts/<TWILIO_ACCOUNT_SID>/Messages/SM652cffe4b64a4a77a05afb16f610eb6f/Media.json"}}'
+        "uri": "/2010-04-01/Accounts/<TWILIO_ACCOUNT_SID>/Messages/SMce5745c7680441498503b0e43250a3f5.json",
+        "subresource_uris": {"media": "/2010-04-01/Accounts/<TWILIO_ACCOUNT_SID>/Messages/SMce5745c7680441498503b0e43250a3f5/Media.json"}}'
     http_version: 
-  recorded_at: Thu, 20 Dec 2018 01:05:57 GMT
-- request:
-    method: post
-    uri: https://api.twilio.com/2010-04-01/Accounts/<TWILIO_ACCOUNT_SID>/Messages.json
-    body:
-      encoding: UTF-8
-      string: Body=19100&From=%2B16183900798&To=%2B16182460553
-    headers:
-      User-Agent:
-      - twilio-ruby/5.18.0 (ruby/x86_64-darwin17 2.4.1-p111)
-      Accept-Charset:
-      - utf-8
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept:
-      - application/json
-      Authorization:
-      - Basic QUMxMTk0OTNlMTM3YzEwYjJkZjg0ZWExYTU0YmI3ZmMxMDoyMTc3OWJmMWI1ZWRkYWU3MWZjZTQyYTFmNTI4NmMwZQ==
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 201
-      message: CREATED
-    headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match,
-        If-Unmodified-Since
-      Access-Control-Allow-Methods:
-      - GET, POST, DELETE, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Expose-Headers:
-      - ETag
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Thu, 20 Dec 2018 01:05:57 GMT
-      Strict-Transport-Security:
-      - max-age=31536000
-      Twilio-Concurrent-Requests:
-      - '1'
-      Twilio-Request-Duration:
-      - '0.067'
-      Twilio-Request-Id:
-      - RQed3b39a8cf4643fc8d7321403419b4e4
-      X-Powered-By:
-      - AT-5000
-      X-Shenanigans:
-      - none
-      Content-Length:
-      - '807'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"sid": "SMbd0c7eb5411643018e1854cfe75995cf", "date_created": "Thu,
-        20 Dec 2018 01:05:57 +0000", "date_updated": "Thu, 20 Dec 2018 01:05:57 +0000",
-        "date_sent": null, "account_sid": "<TWILIO_ACCOUNT_SID>", "to": "+16182460553",
-        "from": "+16183900798", "messaging_service_sid": null, "body": "Sent from
-        your Twilio trial account - 19100", "status": "queued", "num_segments": "1",
-        "num_media": "0", "direction": "outbound-api", "api_version": "2010-04-01",
-        "price": null, "price_unit": "USD", "error_code": null, "error_message": null,
-        "uri": "/2010-04-01/Accounts/<TWILIO_ACCOUNT_SID>/Messages/SMbd0c7eb5411643018e1854cfe75995cf.json",
-        "subresource_uris": {"media": "/2010-04-01/Accounts/<TWILIO_ACCOUNT_SID>/Messages/SMbd0c7eb5411643018e1854cfe75995cf/Media.json"}}'
-    http_version: 
-  recorded_at: Thu, 20 Dec 2018 01:05:57 GMT
+  recorded_at: Fri, 21 Dec 2018 22:10:10 GMT
 recorded_with: VCR 4.0.0
