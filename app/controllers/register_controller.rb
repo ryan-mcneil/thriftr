@@ -1,7 +1,7 @@
 class RegisterController < ApplicationController
 
   def index
-    if params[:code]
+    if auth_hash
       token = auth_hash["credentials"]["token"]
       session[:token] = token
       @direction = :login

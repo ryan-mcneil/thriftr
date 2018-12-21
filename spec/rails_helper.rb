@@ -4,6 +4,21 @@ require File.expand_path('../../config/environment', __FILE__)
 
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 require 'rspec/rails'
+
+def stub_omniauth
+  OmniAuth.config.test_mode = true
+  OmniAuth.config.mock_auth[:ynab] = OmniAuth::AuthHash.new( {"provider"=>"ynab",
+   "uid"=>nil,
+   "info"=>{},
+   "credentials"=>
+    {"token"=> ENV['YNAB_TOKEN'],
+     "refresh_token"=>
+      "12345",
+     "expires_at"=>1545437081,
+     "expires"=>true},
+   "extra"=>{}})
+end
+
 require 'vcr'
 # require 'support/factory_bot'
 require 'webmock/rspec'
