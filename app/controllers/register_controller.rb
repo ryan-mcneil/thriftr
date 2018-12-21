@@ -1,7 +1,13 @@
 class RegisterController < ApplicationController
 
   def index
-
+    if params[:code]
+      token = auth_hash["credentials"]["token"]
+      session[:token] = token
+      @direction = :login
+    else
+      @direction = :register
+    end
   end
 
   def create
@@ -17,4 +23,8 @@ class RegisterController < ApplicationController
     end
   end
 
+  private
+  def auth_hash
+    request.env['omniauth.auth']
+  end
 end

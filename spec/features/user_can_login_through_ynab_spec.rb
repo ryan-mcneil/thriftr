@@ -25,7 +25,7 @@ feature "As a visitor" do
     expect(current_path).to eq(root_path)
     expect(page).to have_content("Try again!")
   end
-  scenario "user can login with phone number and oauth", :js do
+  xscenario "user can login with phone number and oauth", :js do
     user = User.create(username: "godzilla", phone_number: "3038853559")
 
     visit root_path

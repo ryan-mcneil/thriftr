@@ -1,8 +1,6 @@
 require 'rails_helper'
 
 feature "As a visitor" do
-
-
   scenario "they cannot register with incorrect verification code", :js do
     VCR.use_cassette("user_registers_with_phone_number_cassette") do
       visit root_path
@@ -24,7 +22,5 @@ feature "As a visitor" do
       expect(current_path).to eq(new_user_path)
       expect(page).to have_content("Verification code was incorrect. Please re-enter information")
     end
-
   end
-
 end

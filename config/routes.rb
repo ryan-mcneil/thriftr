@@ -6,9 +6,10 @@ Rails.application.routes.draw do
   root'welcome#index'
 
   get '/ynab', to: redirect("/auth/ynab"), as: '/ynab'
-  get "/auth/ynab/callback", to: "login#create"
+  get "/auth/ynab/callback", to: "register#index"
 
   get '/login', to: 'login#new'
+  post '/login', to: "login#create"
 
   get '/privacy', to: 'privacy#show'
 
