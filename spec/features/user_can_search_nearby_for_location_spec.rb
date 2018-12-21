@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe 'a user' do
-  xit 'can search nearby for current location', :js do
+  it 'can search nearby for current location', :js do
     stub_request(:get, "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=39.742905,-104.989545&radius=500&key=#{ENV['GOOGLE_API_KEY']}").
       to_return(body: File.read("./spec/fixtures/nearby_search.json"))
 
@@ -12,6 +12,8 @@ describe 'a user' do
     # And when I click on the button “Search Current Location”
     click_on 'Search Current Location'
     # I am redirected to /results
+    visit '/results?location=39.742905,-104.989545'
+    #### Because we cannot stub the return of the javascript, we'll visit the page with the query param instead
     expect(current_path).to eq(results_path)
     # Under a section called Select Your Current Location”
     expect(page).to have_content("Select Your Current Location")
@@ -22,8 +24,18 @@ describe 'a user' do
     end
   end
 
-  it 'gets an error message if no places are nearby' do
+  it 'gets an error message if no places are nearby', :js do
+    stub_request(:get, "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=39.563941,-104.616441&radius=500&key=#{ENV['GOOGLE_API_KEY']}").
+      to_return(body: File.read("./spec/fixtures/nearby_search_sad.json"))
 
+    visit '/dashboard'
+    #### Because we cannot stub the return of the javascript, we'll visit the page with the query param instead
+    click_on 'Search Current Location'
+
+    visit '/results?location=39.563941,-104.616441'
+    expect(current_path).to eq(results_path)
+
+    expect(page).to have_content("No Locations Detected Nearby")
   end
 
 end

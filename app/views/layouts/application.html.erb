@@ -21,7 +21,6 @@
   <script type="text/javascript">
 
     function getLocation() {
-      debugger
       if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
       } else {
@@ -30,8 +29,8 @@
     }
 
     function showPosition(position) {
+      console.log(position)
       var loc = position.coords.latitude + ',' + position.coords.longitude;
-      debugger
       window.location.href=`/results?location=${loc}`;
     }
   </script>
