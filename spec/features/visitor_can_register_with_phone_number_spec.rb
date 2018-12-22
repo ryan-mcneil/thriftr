@@ -24,7 +24,7 @@ feature "As a visitor" do
       expect(page).to have_content("Sign up for Thriftr")
 
       fill_in 'user[username]', with: "Bob"
-      fill_in 'user[phone_number]', with: '6182460553'
+      fill_in 'user[phone_number]', with: 6182460553
       click_on "Create User"
 
       fill_in :q, with: "19035"
@@ -37,7 +37,7 @@ feature "As a visitor" do
   scenario "can get to phone code page after oauth", :js do
     VCR.use_cassette("user_registers_with_phone_number_cassette") do
       stub_omniauth
-      user = User.create(username: "godzilla", phone_number: "3038853559")
+      user = User.create(username: "godzilla", phone_number: 3038853559)
 
       visit root_path
 
@@ -52,7 +52,7 @@ feature "As a visitor" do
   scenario "cannot login with incorrect verification code", :js do
     VCR.use_cassette("user_registers_with_phone_number_cassette") do
       stub_omniauth
-      user = User.create(username: "godzilla", phone_number: "3038853559")
+      user = User.create(username: "godzilla", phone_number: 3038853559)
 
       visit root_path
 

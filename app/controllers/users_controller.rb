@@ -11,11 +11,10 @@ class UsersController < ApplicationController
       twilio_verify
       redirect_to register_path
     else
-      flash[:error] = "Invalid information"
+      flash[:error] = "Please complete all fields and enter a unique and valid phone number"
       redirect_to new_user_path
     end
   end
-
 
   private
 
