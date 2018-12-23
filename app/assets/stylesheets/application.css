@@ -7,9 +7,9 @@ body {
 .search {
   text-align: center;
 }
-.search-button {
+.button {
   background-color: #f4e9cd;
-  border-radius: 10px;
+  border-radius: 15px;
   border: black 1px solid;
 }
 .locations {
@@ -36,9 +36,9 @@ body {
     font-size: 40px;
     padding: 10px 0 60px 20px;
   }
-  .search-button {
+  .button {
     font-size: 20px;
-    padding: 5px;
+    padding: 10px 20px;
   }
   .location-link {
     font-size: 20px;
@@ -54,7 +54,7 @@ body {
     font-size: 80px;
     padding: 30px;
   }
-  .search-button {
+  .button {
     font-size: 36px;
     padding: 16px;
   }
