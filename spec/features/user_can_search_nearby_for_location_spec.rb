@@ -6,6 +6,8 @@ describe 'a user' do
       to_return(body: File.read("./spec/fixtures/nearby_search.json"))
 
     # As a registered user
+    user = User.create(username: "godzilla", phone_number: 3038853559)
+    allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
     # When I visit /dashboard
     visit '/dashboard'
     # Then I see a button that says “Search Current Location”
@@ -27,6 +29,9 @@ describe 'a user' do
   it 'gets an error message if no places are nearby', :js do
     stub_request(:get, "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=39.563941,-104.616441&radius=500&key=#{ENV['GOOGLE_API_KEY']}").
       to_return(body: File.read("./spec/fixtures/nearby_search_sad.json"))
+
+    user = User.create(username: "godzilla", phone_number: 3038853559)
+    allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
 
     visit '/dashboard'
     #### Because we cannot stub the return of the javascript, we'll visit the page with the query param instead

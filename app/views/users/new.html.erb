@@ -3,8 +3,8 @@
 <h2>When you click the button you will be sent a code to the submited phone number. Please submit code on the next page.</h2>
 <%= form_for @user do |form| %>
     <%= form.label :username%>
-    <%= form.text_field :username%>
+    <%= form.text_field :username, placeholder: "bigsaver$"%>
     <%= form.label :phone_number%>
-    <%= form.text_field :phone_number%>
+    <%= form.text_field :phone_number, placeholder: "3031234567"%>
   <%= form.submit %>
 <% end %>
