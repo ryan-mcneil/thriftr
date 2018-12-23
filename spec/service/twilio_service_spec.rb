@@ -10,15 +10,15 @@ RSpec.describe TwilioService do
   end
 
   it '.formatted_number' do
-    number = "123"
+    number = 1234567891
     service = TwilioService.new
 
-    expect(service.formatted_number(number)).to eq("+1123")
+    expect(service.formatted_number(number)).to eq("+11234567891")
   end
 
   it 'can send_verification_code' do
     VCR.use_cassette("twilio_verify_cassette") do
-      number = "6182460553"
+      number = 6182460553
       code = "43819"
       service = TwilioService.new
       response = service.send_verification_code(number,code)

@@ -16,5 +16,8 @@ Rails.application.routes.draw do
   get '/register', to: 'register#index'
   post '/register', to: 'register#create'
 
+  get '/preferences', to: 'preferences#index'
+  put '/preferences', to: 'preferences#update'
+
   resources :users, only: [:create, :update, :new]
 end

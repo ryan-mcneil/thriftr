@@ -5,9 +5,9 @@
 <div class="input-form">
   <%= form_for @user do |form| %>
     <%= form.label :username%>
-    <%= form.text_field :username%>
+    <%= form.text_field :username, placeholder: "bigsaver$"%>
     <%= form.label :phone_number%>
-    <%= form.text_field :phone_number%>
-    <%= form.submit %>
+    <%= form.text_field :phone_number, placeholder: "3031234567"%>
+  <%= form.submit %>
   <% end %>
 </div>
