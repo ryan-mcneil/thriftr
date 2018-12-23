@@ -26,4 +26,14 @@ RSpec.describe TwilioService do
       expect(response.body).to eq("Sent from your Twilio trial account - #{code}")
     end
   end
+  it 'can send_verification_code' do
+    VCR.use_cassette("twilio_notification_cassette") do
+      number = 3038853559
+      msg = Message.create(text_msg: "Have you checked your YNAB budget today?")
+      service = TwilioService.new
+      response = service.send_notification(number, msg)
+
+      expect(response.body).to eq("Sent from your Twilio trial account - Have you checked your YNAB budget today?")
+    end
+  end
 end

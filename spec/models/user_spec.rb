@@ -8,9 +8,9 @@ RSpec.describe User, type: :model do
     it { should validate_presence_of :username }
   end
   describe 'class methods' do
-    it '#daily_notification_users'do
+    it '::daily_notification_users'do
     user_1 = User.create(username: "a", phone_number: 3038853559)
-    user_2 = User.create(username: "b", phone_number: 3038931194, notifications: false)
+    user_2 = User.create(username: "b", phone_number: 6182460553, notifications: false)
 
     users = User.daily_notification_users
 
