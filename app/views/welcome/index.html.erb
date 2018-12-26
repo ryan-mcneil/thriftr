@@ -1,11 +1,13 @@
+<h1 class="main-logo">thriftr</h1>
 
-<%= form_tag :login, method: :get, action: :new do %>
-  <%= text_field_tag :q, "Phone Number"%>
-  <%= submit_tag "Login" %>
-<%end%>
-
-<%= link_to "Register here", new_user_path %>
-
-<%= link_to "Don't have a YNAB (You Need A Budget) account?", "https://www.youneedabudget.com/" %>
-
-<%= link_to "Privacy Policy", '/privacy' %>
+<div class="center login">
+  <%= form_tag :login, method: :get, action: :new do %>
+  <%= text_field_tag :q, nil, placeholder: 'Phone Number', class: 'center light-back input-field'%><br><br>
+  <%= submit_tag "Login", class: 'dark-text light-back button' %>
+  <%end%>
+</div>
+<div class="center links">
+  <%= link_to "Register here", new_user_path, class: 'dark-text link' %> <br><br>
+  <%= link_to "Don't have a YNAB (You Need A Budget) account?", "https://www.youneedabudget.com/", class: 'dark-text link' %> <br><br>
+  <%= link_to "Privacy Policy", '/privacy', class: 'dark-text link' %>
+</div>

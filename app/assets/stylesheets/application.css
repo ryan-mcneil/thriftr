@@ -3,51 +3,89 @@
 body {
   background-color: #468189;
 }
-
-.search {
+.dark-text {
+  color: #031926;
+}
+.light-text {
+  color: #f4e9cd;
+}
+.light-back {
+  background-color: #f4e9cd
+}
+.center {
   text-align: center;
 }
+.main-logo {
+  font-family: monospace;
+}
+.prompt {
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
 .button {
-  background-color: #f4e9cd;
   border-radius: 15px;
   border: black 1px solid;
 }
-.locations {
-  text-align: center;
-}
-.location-link {
+.button:hover {
+  background-color: #031926;
   color: #f4e9cd;
+}
+.locations {
+  height: 200px;
+  overflow-y: scroll;
+}
+.link {
   text-decoration: none;
 }
-
+.links {
+  padding-top: 30px;
+}
 .logo {
-  color: #031926;
   font-family: monospace;
   display: inline-block;
   text-decoration: none;
 }
+.link:hover {
+  color: #031926;
+}
+
 
 @media only screen and (max-width: 400px) {
-  .locations h2 {
-    color: #031926;
+  .main-logo {
+    font-size: 60px;
+    padding: 20px 0;
+  }
+  .locations-header {
     font-size: 36px;
   }
   .logo {
     font-size: 40px;
-    padding: 10px 0 60px 20px;
+    padding: 10px 0 50px 20px;
   }
   .button {
     font-size: 20px;
     padding: 10px 20px;
   }
-  .location-link {
+  .link {
     font-size: 20px;
+  }
+  .locations {
+    height: 200px;
+  }
+  .input-field {
+    font-size: 24px;
+  }
+  .privacy {
+    font-size: 24px;
   }
 }
 
 @media only screen and (min-width: 401px) {
-  .locations h2 {
-    color: #031926;
+  .main-logo {
+    font-size: 80px;
+    padding: 20px 0;
+  }
+  .locations-header {
     font-size: 50px;
   }
   .logo {
@@ -57,9 +95,22 @@ body {
   .button {
     font-size: 36px;
     padding: 16px;
+    min-width: 200px;
   }
-  .location-link {
+  .link {
     font-size: 30px;
     padding: 5px;
+
+  }
+  .locations {
+    height: 300px;
+  }
+  .input-field {
+    font-size: 36px;
+  }
+  .privacy {
+    font-size: 30px;
+    max-width: 600px;
+    margin: 0 auto;
   }
 }
