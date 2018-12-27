@@ -1,0 +1,11 @@
+<%= render "partials/nav" %>
+<h1 class="center dark-text">Enter code to verify updated phone nuumber</h1>
+
+<div class="center">
+  <%= form_tag @direction, method: :patch do %>
+  <%= text_field_tag :q, nil, placeholder: "Enter Code", class: "center light-back input-field"%><br><br>
+  <%= submit_tag "Verify", class: "light-back button" %>
+  <%end%>
+</div>
+
+<h3 class = "center dark-text">If you do not receive a text, please click the button above to retry<h3>

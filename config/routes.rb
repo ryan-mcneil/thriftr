@@ -16,6 +16,9 @@ Rails.application.routes.draw do
   get '/register', to: 'register#index'
   post '/register', to: 'register#create'
 
+  get 'verification/:id/edit', to: 'verification#edit', as: 'edit_verification'
+  patch '/verification/:id', to: 'verification#update', as: 'verification'
+
   get '/preferences', to: 'preferences#index'
   put '/preferences', to: 'preferences#update'
 
