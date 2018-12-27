@@ -25,7 +25,7 @@ feature "As a visitor" do
 
       fill_in 'user[username]', with: "Bob"
       fill_in 'user[phone_number]', with: 6182460553
-      click_on "Create User"
+      click_on "Submit"
 
       fill_in :q, with: "19035"
       click_on "Verify"

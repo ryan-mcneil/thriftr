@@ -10,9 +10,9 @@ class ApplicationController < ActionController::Base
     rand(10000..99999).to_s
   end
 
-  def twilio_verify
+  def twilio_verify(phone_number)
     session[:code] = random_code
-    TwilioService.new.send_verification_code(current_user.phone_number,session[:code])
+    TwilioService.new.send_verification_code(phone_number,session[:code])
   end
 
 end

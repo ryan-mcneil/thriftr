@@ -8,7 +8,7 @@ class UsersController < ApplicationController
     user = User.new(user_params)
     if user.save
       session[:user_id] = user.id
-      twilio_verify
+      twilio_verify(current_user.phone_number)
       redirect_to register_path
     else
       flash[:error] = "Please complete all fields and enter a unique and valid phone number"
@@ -17,11 +17,11 @@ class UsersController < ApplicationController
   end
 
   def edit
-
+    @user = current_user
   end
 
   def update
-    binding.pry
+
   end
 
   private

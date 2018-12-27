@@ -15,7 +15,7 @@ feature "As a visitor" do
 
     fill_in 'user[username]', with: "Bob"
     fill_in 'user[phone_number]', with: 1234567891
-    click_on "Create User"
+    click_on "Submit"
 
     expect(current_path).to eq(new_user_path)
     expect(page).to have_content("Please complete all fields and enter a unique and valid phone number")
@@ -27,7 +27,7 @@ feature "As a visitor" do
 
     fill_in 'user[username]', with: "bmidler"
     fill_in 'user[phone_number]', with: 123
-    click_on "Create User"
+    click_on "Submit"
 
     expect(current_path).to eq(new_user_path)
     expect(page).to have_content("Please complete all fields and enter a unique and valid phone number")
@@ -39,7 +39,7 @@ feature "As a visitor" do
 
     fill_in 'user[username]', with: "bmidler"
     fill_in 'user[phone_number]', with: "12b3x3"
-    click_on "Create User"
+    click_on "Submit"
 
     expect(current_path).to eq(new_user_path)
     expect(page).to have_content("Please complete all fields and enter a unique and valid phone number")

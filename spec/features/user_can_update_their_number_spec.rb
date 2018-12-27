@@ -10,9 +10,9 @@ feature "as a registered user" do
 
     click_on ("Update My Phone Number")
 
-    expect(current_path).to eq(phone_path)
+    expect(current_path).to eq(edit_user_path(user))
     expect(page).to have_content("Please enter new phone number below")
-    fill_in :new_phone_number, with: "1112223333"
+    fill_in 'user[phone_number]', with: "1112223333"
 
     click_on ("Update Phone Number")
 

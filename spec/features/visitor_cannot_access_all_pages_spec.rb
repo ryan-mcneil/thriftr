@@ -3,12 +3,12 @@ require "rails_helper"
 feature "as a visitor" do
   scenario "I cannot acccess certain pages", :js do
     visit dashboard_path
-    expect(page).to have_content("The page you're looking for could not be found")
+    expect(current_path).to eq(root_path)
 
     visit preferences_path
-    expect(page).to have_content("The page you're looking for could not be found")
+    expect(current_path).to eq(root_path)
 
     visit results_path
-    expect(page).to have_content("The page you're looking for could not be found")
+    expect(current_path).to eq(root_path)
   end
 end
