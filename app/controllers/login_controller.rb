@@ -6,7 +6,7 @@ class LoginController < ApplicationController
      twilio_verify
      redirect_to '/ynab'
    else
-     flash[:error] = "Try again!"
+     flash[:error] = "We don't have that number in our system, please try again"
      redirect_to root_path
    end
  end

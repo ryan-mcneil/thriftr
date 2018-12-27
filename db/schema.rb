@@ -10,14 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_19_201931) do
+ActiveRecord::Schema.define(version: 2018_12_23_222915) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "messages", force: :cascade do |t|
+    t.string "text_msg"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "username"
-    t.string "phone_number"
+    t.bigint "phone_number"
     t.string "ynab_token"
     t.boolean "verified", default: false
     t.boolean "notifications", default: true

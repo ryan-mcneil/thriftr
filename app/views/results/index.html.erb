@@ -1,11 +1,11 @@
 <%= render "partials/nav" %>
 
-<div class="locations">
-  <h2>Select Your Current Location</h2>
+<h2 class="center locations-header">Select Your Current Location</h2>
+<div class="locations center">
   <% if @facade.locations.size > 0 %>
     <% @facade.locations.each do |location| %>
       <div class="location">
-        <p><%= link_to location.name, dashboard_path, class: "location-link" %></p>
+        <p><%= link_to location.name, dashboard_path, class: "light-text link" %></p>
       </div>
     <% end %>
   <% else %>
