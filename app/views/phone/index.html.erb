@@ -1,0 +1,6 @@
+<h2> You're current phone number is <%= current_user.phone_number %>. Please enter new phone number below </h2>
+
+<%= form_tag :users,  method: :patch do %>
+  <%= text_field_tag :new_phone_number, "Phone Number"%>
+  <%= submit_tag "Update Phone Number" %>
+<%end%>

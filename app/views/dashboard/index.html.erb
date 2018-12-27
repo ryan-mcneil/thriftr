@@ -2,3 +2,8 @@
 <div class="search">
   <button onclick="getLocation()" class="search-button">Search Current Location</button>
 </div>
+
+<div>
+<h2> My Phone Number: <%= current_user.phone_number %> </h2>
+<%= link_to "Update My Phone Number", phone_path%>
+</div>

@@ -16,6 +16,13 @@ class UsersController < ApplicationController
     end
   end
 
+  def edit
+
+  end
+
+  def update
+    binding.pry 
+  end
 
   private
 

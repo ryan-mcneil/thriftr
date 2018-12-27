@@ -19,5 +19,7 @@ Rails.application.routes.draw do
   get '/preferences', to: 'preferences#index'
   put '/preferences', to: 'preferences#update'
 
-  resources :users, only: [:create, :update, :new]
+  get '/phone', to: 'phone#index'
+
+  resources :users, only: [:create, :update, :new, :edit, :update]
 end
