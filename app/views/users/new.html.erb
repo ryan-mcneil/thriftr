@@ -1,10 +1,11 @@
 <%= render "partials/nav" %>
-<h1> Sign up for Thriftr</h1>
-<h2>When you click the button you will be sent a code to the submited phone number. Please submit code on the next page.</h2>
-<%= form_for @user do |form| %>
-    <%= form.label :username%>
-    <%= form.text_field :username, placeholder: "bigsaver$"%>
-    <%= form.label :phone_number%>
-    <%= form.text_field :phone_number, placeholder: "3031234567"%>
-  <%= form.submit %>
-<% end %>
+
+<h1 class="center dark-text signup"> Sign up for Thriftr</h1>
+<h2 class="center dark-text prompt">When you click the button you will be sent a code to the submited phone number. Please submit code on the next page.</h2>
+<div class="dark-text center input-form">
+  <%= form_for @user do |form| %>
+    <%= form.text_field :username, placeholder: "Username", class: 'center light-back input-field'%><br><br>
+    <%= form.text_field :phone_number, placeholder: "Phone Number", class: 'center light-back input-field'%><br><br>
+    <%= form.submit "Submit", class: "dark-text light-back button" %>
+  <% end %>
+</div>
