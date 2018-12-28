@@ -3,7 +3,7 @@ class LoginController < ApplicationController
  def new
    if user = User.find_by(phone_number: params[:q])
      session[:user_id] = user.id
-     twilio_verify
+     twilio_verify(current_user.phone_number)
      redirect_to '/ynab'
    else
      flash[:error] = "We don't have that number in our system, please try again"

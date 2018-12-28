@@ -1,0 +1,10 @@
+<%= render "partials/nav" %>
+
+<h1 class="center dark-text signup"> Please enter new phone number below</h1>
+<h2 class="center dark-text prompt">When you click the button you will be sent a code to the submited phone number. Please submit code on the next page.</h2>
+<div class="dark-text center input-form">
+  <%= form_for @user, url: verification_path(@user) do |form| %>
+    <%= form.text_field :phone_number, placeholder: "Phone Number", class: 'center light-back input-field'%><br><br>
+    <%= form.submit "Update Phone Number", class: "dark-text light-back button" %>
+  <% end %>
+</div>
