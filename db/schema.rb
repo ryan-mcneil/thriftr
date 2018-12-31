@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 2018_12_23_222915) do
   create_table "users", force: :cascade do |t|
     t.string "username"
     t.bigint "phone_number"
-    t.string "ynab_token"
+    t.string "ynab_budget_id"
     t.boolean "verified", default: false
     t.boolean "notifications", default: true
     t.datetime "created_at", null: false

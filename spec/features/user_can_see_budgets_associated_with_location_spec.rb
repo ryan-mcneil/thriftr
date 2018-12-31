@@ -7,14 +7,13 @@ describe 'a user' do
         to_return(body: File.read("./spec/fixtures/nearby_search.json"))
 
       stub_request(:get, "https://api.youneedabudget.com/v1/budgets/#{ENV['YNAB_BUDGET_ID']}").
-        with(headers: {Authorization: "Bearer #{ENV['YNAB_API_KEY']}"}).
         to_return(body: File.read("./spec/fixtures/budget.json"))
 
       # As a registered user
       user = User.create(username: "godzilla", phone_number: 3038853559)
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
 
-      expect(user.ynab_token).to be nil
+      expect(user.ynab_budget_id).to be nil
       # From the /results page
       visit '/results?location=39.742905,-104.989545'
       # I click on the link of a Location Name

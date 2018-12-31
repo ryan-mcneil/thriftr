@@ -2,7 +2,7 @@ class LocationSearchFacade
 
   def initialize(coords)
     @coords = coords
-    @types = ["restaurant", "store", "bowling_alley", "bar"]
+    @types = ["restaurant", "store", "bowling_alley", "bar", "movie_theater"]
   end
 
   def locations
