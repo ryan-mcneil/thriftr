@@ -13,8 +13,8 @@ class BudgetFacade
     @name
   end
 
-  def location_budgets(budget_id)
-    requested_budgets = request_budgets(budget_id)
+  def location_budgets(budget_id, token)
+    requested_budgets = request_budgets(budget_id, token)
     budgets = []
     @types.each do |type|
       @budget_categories[type].each do |name|
@@ -26,13 +26,11 @@ class BudgetFacade
     budgets.uniq
   end
 
-  def request_budgets(budget_id)
-
+  def request_budgets(budget_id, token)
     conn = Faraday.new(url: 'https://api.youneedabudget.com')
 
-    # udpate environmental variable with current_user.ynab_budget_id
     response = conn.get "/v1/budgets/#{budget_id}" do |f|
-      f.headers['Authorization'] = "Bearer #{ENV['YNAB_API_KEY']}"
+      f.headers['Authorization'] = "Bearer #{token}"
     end
 
     budget_data = JSON.parse(response.body, symbolize_names: true)[:data][:budget][:categories]

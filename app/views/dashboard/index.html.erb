@@ -6,7 +6,7 @@
   <% if @facade %>
     <h2>Selected Location:</h2>
     <h3><%= @facade.location_name %></h3>
-    <% @facade.location_budgets(current_user.ynab_budget_id).each do |budget| %>
+    <% @facade.location_budgets(current_user.ynab_budget_id, session[:token]).each do |budget| %>
       <p>You have <%= number_to_currency(budget.balance) %> left in your <%= budget.name %> budget</p>
     <% end %>
   <% end %>
