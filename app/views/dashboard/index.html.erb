@@ -2,7 +2,7 @@
 <div class="center search">
   <button onclick="getLocation()" class="dark-text light-back button">Search Current Location</button>
 </div>
-<div class="budget_info">
+<div class="budget_info center">
   <% if @facade %>
     <h2>Selected Location:</h2>
     <h3><%= @facade.location_name %></h3>
@@ -11,8 +11,12 @@
     <% end %>
   <% end %>
 </div>
-<div>
-<h2> My Phone Number: <%= current_user.phone_number %> </h2>
-<%= link_to "Update My Phone Number", edit_user_path(current_user)%>
+<div class="center">
+  <h2> My Phone Number: <%= current_user.phone_number %> </h2>
+  <%= link_to "Update My Phone Number", edit_user_path(current_user)%><br>
+  <%= link_to "Update My Daily Notifications", preferences_path %><br><br>
 </div>
-<%= link_to "Update My Daily Notifications", preferences_path %>
+
+<div class="center">
+    <%= button_to "Log Out", "/logout", method: :delete, class: "center dark-text light-back button" %>
+</div>
