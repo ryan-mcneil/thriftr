@@ -12,6 +12,6 @@ class PreferencesController < ApplicationController
     else
       flash[:notice] = "You are no longer signed up for daily text notifications"
     end
-    redirect_to preferences_path
+    redirect_to dashboard_path
   end
 end

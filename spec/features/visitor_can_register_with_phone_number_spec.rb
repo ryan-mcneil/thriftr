@@ -40,49 +40,49 @@ feature "As a visitor" do
     end
   end
   scenario "can get to phone code page after oauth", :js do
-    VCR.use_cassette("user_registers_with_phone_number_cassette") do
-      stub_omniauth
-      user = User.create(username: "godzilla", phone_number: 3038853559)
+    stub_twilio_api
+    stub_ynab_budget_id_request
+    stub_omniauth
+    user = User.create(username: "godzilla", phone_number: 3038853559)
 
-      visit root_path
+    visit root_path
 
-      expect(page).to have_button("Login")
+    expect(page).to have_button("Login")
 
-      fill_in :q, with: 3038853559
-      click_on "Login"
+    fill_in :q, with: 3038853559
+    click_on "Login"
 
-      expect(current_path).to eq("/auth/ynab/callback")
-    end
+    expect(current_path).to eq("/auth/ynab/callback")
   end
   scenario "cannot login with incorrect verification code", :js do
-    VCR.use_cassette("user_registers_with_phone_number_cassette") do
-      stub_omniauth
-      user = User.create(username: "godzilla", phone_number: 3038853559)
+    stub_twilio_api
+    stub_ynab_budget_id_request
+    stub_omniauth
+    user = User.create(username: "godzilla", phone_number: 3038853559)
 
-      visit root_path
+    visit root_path
 
-      fill_in :q, with: 3038853559
-      click_on "Login"
+    fill_in :q, with: 3038853559
+    click_on "Login"
 
-      fill_in :q, with: "19035"
-      click_on "Verify"
+    fill_in :q, with: "19035"
+    click_on "Verify"
 
-      expect(current_path).to eq(root_path)
-      expect(page).to have_content("Verification code was incorrect. Please login again")
-    end
+    expect(current_path).to eq(root_path)
+    expect(page).to have_content("Verification code was incorrect. Please login again")
   end
   scenario "does not get text message with verification code", :js do
-    VCR.use_cassette("user_registers_with_phone_number_cassette") do
-      stub_omniauth
-      user = User.create(username: "godzilla", phone_number: 3038853559)
+    stub_twilio_api
+    stub_ynab_budget_id_request
+    stub_omniauth
+    user = User.create(username: "godzilla", phone_number: 3038853559)
 
-      visit root_path
+    visit root_path
 
-      fill_in :q, with: 3038853559
-      click_on "Login"
+    fill_in :q, with: 3038853559
+    click_on "Login"
 
-      expect(current_path).to eq("/auth/ynab/callback")
-      expect(page).to have_content("If you do not receive a text, please click the button above to retry")
-    end
+    expect(current_path).to eq("/auth/ynab/callback")
+    expect(page).to have_content("If you do not receive a text, please click the button above to retry")
   end
 end

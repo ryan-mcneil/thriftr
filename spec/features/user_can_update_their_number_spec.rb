@@ -18,6 +18,12 @@ feature "as a registered user" do
       click_on ("Update Phone Number")
 
       expect(current_path).to eq(edit_verification_path(user))
+      save_and_open_page
+      fill_in :q, with: 12345
+      click_on "Verify"
+
+      expect(page).to have_content("Verification code was incorrect. Phone number was not updated. Try again!")
+      expect(current_path).to eq(edit_user_path(user))
     end
   end
 end

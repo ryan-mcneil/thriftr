@@ -5,20 +5,6 @@ require File.expand_path('../../config/environment', __FILE__)
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 require 'rspec/rails'
 
-def stub_omniauth
-  OmniAuth.config.test_mode = true
-  OmniAuth.config.mock_auth[:ynab] = OmniAuth::AuthHash.new( {"provider"=>"ynab",
-   "uid"=>nil,
-   "info"=>{},
-   "credentials"=>
-    {"token"=> ENV['YNAB_TOKEN'],
-     "refresh_token"=>
-      "12345",
-     "expires_at"=>1545437081,
-     "expires"=>true},
-   "extra"=>{}})
-end
-
 require 'vcr'
 # require 'support/factory_bot'
 require 'webmock/rspec'
@@ -85,7 +71,39 @@ RSpec.configure do |config|
 
 end
 
+def stub_omniauth
+  OmniAuth.config.test_mode = true
+  OmniAuth.config.mock_auth[:ynab] = OmniAuth::AuthHash.new( {"provider"=>"ynab",
+   "uid"=>nil,
+   "info"=>{},
+   "credentials"=>
+    {"token"=> ENV['YNAB_TOKEN'],
+     "refresh_token"=>
+      "12345",
+     "expires_at"=>1545437081,
+     "expires"=>true},
+   "extra"=>{}})
+end
+
 def stub_twilio_api
   stub_request(:post, "https://api.twilio.com/2010-04-01/Accounts/AC119493e137c10b2df84ea1a54bb7fc10/Messages.json").to_return(body: File.read("./spec/fixtures/twilio_response.json"))
+end
 
+def stub_ynab_budget_id_request
+  stub_request(:get, "https://api.youneedabudget.com/v1/budgets").to_return(body: File.read("./spec/fixtures/budget_request.json"))
+end
+
+def stub_full_budget_data
+  stub_request(:get, "https://api.youneedabudget.com/v1/budgets/#{ENV['YNAB_BUDGET_ID']}").
+    to_return(body: File.read("./spec/fixtures/budget.json"))
+end
+
+def stub_nearby_search
+  stub_request(:get, "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=39.742905,-104.989545&radius=500&key=#{ENV['GOOGLE_API_KEY']}").
+    to_return(body: File.read("./spec/fixtures/nearby_search.json"))
+end
+
+def stub_nearby_search_sad
+  stub_request(:get, "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=39.563941,-104.616441&radius=500&key=#{ENV['GOOGLE_API_KEY']}").
+    to_return(body: File.read("./spec/fixtures/nearby_search_sad.json"))
 end
