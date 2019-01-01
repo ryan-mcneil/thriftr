@@ -5,8 +5,8 @@ class RegisterController < ApplicationController
       token = auth_hash["credentials"]["token"]
       session[:token] = token
       # this causes tests to fail, see below definition
-      get_id(token) unless current_user.ynab_budget_id
-
+      budget_id = get_id(token)
+      current_user.update(ynab_budget_id: budget_id)
       @direction = :login
     else
       @direction = :register
@@ -41,7 +41,6 @@ class RegisterController < ApplicationController
     end
 
     budget_data = JSON.parse(response.body, symbolize_names: true)
-
-    #current_user.update(ynab_budget_id: budget_data[stuff]) or something like that
+    budget_data[:data][:budgets][0][:id]
   end
 end
