@@ -31,8 +31,8 @@ class BudgetFacade
     conn = Faraday.new(url: 'https://api.youneedabudget.com')
 
     # udpate environmental variable with current_user.ynab_budget_id
-    response = conn.get "/v1/budgets/#{ENV['YNAB_BUDGET_ID']}" do |f|
-      # f.headers['Authorization'] = "Bearer #{ENV['YNAB_API_KEY']}"
+    response = conn.get "/v1/budgets/#{budget_id}" do |f|
+      f.headers['Authorization'] = "Bearer #{ENV['YNAB_API_KEY']}"
     end
 
     budget_data = JSON.parse(response.body, symbolize_names: true)[:data][:budget][:categories]
