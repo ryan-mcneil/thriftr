@@ -102,3 +102,8 @@ def stub_nearby_search
   stub_request(:get, "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=39.742905,-104.989545&radius=500&key=#{ENV['GOOGLE_API_KEY']}").
     to_return(body: File.read("./spec/fixtures/nearby_search.json"))
 end
+
+def stub_nearby_search_sad
+  stub_request(:get, "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=39.563941,-104.616441&radius=500&key=#{ENV['GOOGLE_API_KEY']}").
+    to_return(body: File.read("./spec/fixtures/nearby_search_sad.json"))
+end

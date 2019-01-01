@@ -4,7 +4,6 @@ class RegisterController < ApplicationController
     if auth_hash
       token = auth_hash["credentials"]["token"]
       session[:token] = token
-      # this causes tests to fail, see below definition
       unless current_user.ynab_budget_id
         budget_id = get_id(token)
         current_user.update(ynab_budget_id: budget_id)
@@ -35,8 +34,6 @@ class RegisterController < ApplicationController
   end
 
   def get_id(token)
-    # this request will currently break tests because the stub won't align due to
-    # dynamic tokens
     conn = Faraday.new(url: 'https://api.youneedabudget.com')
 
     response = conn.get "/v1/budgets" do |f|

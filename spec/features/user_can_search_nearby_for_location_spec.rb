@@ -2,8 +2,7 @@ require 'rails_helper'
 
 describe 'a user' do
   it 'can search nearby for current location', :js do
-    stub_request(:get, "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=39.742905,-104.989545&radius=500&key=#{ENV['GOOGLE_API_KEY']}").
-      to_return(body: File.read("./spec/fixtures/nearby_search.json"))
+    stub_nearby_search
 
     # As a registered user
     user = User.create(username: "godzilla", phone_number: 3038853559)
@@ -27,8 +26,7 @@ describe 'a user' do
   end
 
   it 'gets an error message if no places are nearby', :js do
-    stub_request(:get, "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=39.563941,-104.616441&radius=500&key=#{ENV['GOOGLE_API_KEY']}").
-      to_return(body: File.read("./spec/fixtures/nearby_search_sad.json"))
+    stub_nearby_search_sad
 
     user = User.create(username: "godzilla", phone_number: 3038853559)
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
