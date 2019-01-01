@@ -5,7 +5,7 @@
   <% if @facade.locations.size > 0 %>
     <% @facade.locations.each do |location| %>
       <div class="location">
-        <p><%= link_to location.name, dashboard_path, class: "light-text link" %></p>
+        <p><%= link_to location.name, dashboard_path(name: location.name, types: location.types), class: "light-text link" %></p>
       </div>
     <% end %>
   <% else %>

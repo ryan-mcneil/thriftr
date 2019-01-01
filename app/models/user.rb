@@ -5,4 +5,5 @@ class User < ApplicationRecord
   def self.daily_notification_users
     User.where(notifications: true)
   end
+
 end

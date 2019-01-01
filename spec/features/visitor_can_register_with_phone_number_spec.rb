@@ -2,6 +2,11 @@ require 'rails_helper'
 
 feature "As a visitor" do
   scenario "cannot login with phone number that doesn't exist in the db", :js do
+    stub_request(:get, "https://api.youneedabudget.com/v1/budgets").
+      with(headers: {Authorization: "Bearer #{ENV['YNAB_API_KEY']}"}).
+      to_return(body: File.read("./spec/fixtures/budget.json"))
+
+
     visit root_path
 
     expect(page).to have_button("Login")
