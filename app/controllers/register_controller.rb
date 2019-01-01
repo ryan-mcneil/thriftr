@@ -5,8 +5,10 @@ class RegisterController < ApplicationController
       token = auth_hash["credentials"]["token"]
       session[:token] = token
       # this causes tests to fail, see below definition
-      budget_id = get_id(token)
-      current_user.update(ynab_budget_id: budget_id)
+      unless current_user.ynab_budget_id
+        budget_id = get_id(token)
+        current_user.update(ynab_budget_id: budget_id)
+      end
       @direction = :login
     else
       @direction = :register
@@ -17,6 +19,7 @@ class RegisterController < ApplicationController
     if params[:q] == session[:code]
       current_user.update(verified: true)
       session.clear
+      flash[:error] = "Please login to complete the registration process"
       redirect_to root_path
     else
       User.find(session[:user_id]).delete
