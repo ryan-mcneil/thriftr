@@ -13,8 +13,8 @@ class BudgetFacade
     @name
   end
 
-  def location_budgets
-    requested_budgets = request_budgets
+  def location_budgets(budget_id)
+    requested_budgets = request_budgets(budget_id)
     budgets = []
     @types.each do |type|
       @budget_categories[type].each do |name|
@@ -26,9 +26,7 @@ class BudgetFacade
     budgets.uniq
   end
 
-  def request_budgets
-
-
+  def request_budgets(budget_id)
 
     conn = Faraday.new(url: 'https://api.youneedabudget.com')
 
@@ -44,4 +42,6 @@ class BudgetFacade
     end
     budgets
   end
+
+
 end
