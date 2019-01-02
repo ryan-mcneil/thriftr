@@ -18,7 +18,7 @@ feature "as a registered user" do
       click_on ("Update Phone Number")
 
       expect(current_path).to eq(edit_verification_path(user))
-      save_and_open_page
+
       fill_in :q, with: 12345
       click_on "Verify"
 

@@ -32,7 +32,6 @@ class BudgetFacade
     response = conn.get "/v1/budgets/#{budget_id}" do |f|
       f.headers['Authorization'] = "Bearer #{token}"
     end
-
     budget_data = JSON.parse(response.body, symbolize_names: true)[:data][:budget][:categories]
     budgets = budget_data.map do |budget|
       Budget.new(budget[:name],
