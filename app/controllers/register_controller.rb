@@ -33,7 +33,7 @@ class RegisterController < ApplicationController
   end
 
   def get_id(token)
-    service = YnabService.new(token)
-    service.budget_id
+    service = YnabService.new({token: token})
+    service.return_budget_id
   end
 end
