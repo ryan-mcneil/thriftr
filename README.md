@@ -26,11 +26,31 @@ Open terminal and run these commands:
 * bundle
 * rake db:{drop,create,migrate,seed}
 * rails s (this will open the server to look at the program in development)
-** because of the important security needs of the YNAB app that Thriftr utilizes, we recommend that you take a look at and play around with this app in its production environment available here - https://fierce-cove-88613.herokuapp.com/.  To fully utilize and test the development environment, you must login and create an NGROK account in order to create a secure website for development (https://ngrok.com/)
 
-Open up a web browser (preferably Chrome)
+* To fully utilize and test the development environment, you must login and create an NGROK account in order to create a secure website for development (https://ngrok.com/)
 
-Navigate to localhost:3000 or the provided ngrok secure website in order to gain access to the Thriftr landing page.  Once on the landing page, follow the instructions to create a YNAB account, Thriftr Account or Login if you have already registered for both.
+* Open up a web browser (preferably Chrome)
+
+* Navigate to localhost:3000 or the provided ngrok secure website in order to gain access to the Thriftr landing page.  Once on the landing page, follow the instructions to create a YNAB account, Thriftr Account or Login if you have already registered for both.
+
+### API_KEYS
+In order to full utilize the functionality of this app, you must create accounts for and sign up to receive a number of API Keys.
+
+*Google_API - https://developers.google.com/places/web-service/get-api-key
+*Twilio_API - https://www.twilio.com/try-twilio
+*YNAB_API - https://api.youneedabudget.com/
+
+Once you receive each of these keys, follow these steps to add them to your Thriftr application:
+
+From the terminal run - figaro install
+This will create a hidden file in config/application.yml
+Within this hidden file, add your new API keys using the following format:
+YNAB_API_KEY: ynab_api_key_goes_here
+YNAB_CLIENT_ID: ynab_client_id_here
+YNAB_CLIENT_SECRET: ynab_client_secret_here
+GOOGLE_API_KEY: google_api_key_goes_here
+TWILIO_ACCOUNT_SID: twilio_account_sid_here
+TWILIO_AUTH_TOKEN: twilio_auth_token_here
 
 ## Running the tests
 
