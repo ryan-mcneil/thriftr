@@ -1,8 +1,8 @@
 class BudgetFacade
 
-  def initialize(name, types)
-    @name = name
-    @types = types
+  def initialize(data)
+    @name = data[:name]
+    @types = data[:types]
     @budget_categories = {"bar" => ["Bars", "Dining Out", "Drinks"],
                           "restaurant" => ["Restaurants", "Eating Out", "Dining", "Dining Out"],
                           "store" => ["Clothing", "Gifts"],
@@ -13,8 +13,8 @@ class BudgetFacade
     @name
   end
 
-  def location_budgets(budget_id, token)
-    requested_budgets = request_budgets(budget_id, token)
+  def location_budgets(data)
+    requested_budgets = request_budgets(data)
     budgets = []
     @types.each do |type|
       @budget_categories[type].each do |name|
@@ -26,20 +26,14 @@ class BudgetFacade
     budgets.uniq
   end
 
-  def request_budgets(budget_id, token)
-    conn = Faraday.new(url: 'https://api.youneedabudget.com')
+  def request_budgets(data)
+    service = YnabService.new(data)
+    budgets = service.budget_categories
 
-    response = conn.get "/v1/budgets/#{budget_id}" do |f|
-      f.headers['Authorization'] = "Bearer #{token}"
-    end
-
-    budget_data = JSON.parse(response.body, symbolize_names: true)[:data][:budget][:categories]
-    budgets = budget_data.map do |budget|
+    budgets.map do |budget|
       Budget.new(budget[:name],
                 budget[:balance])
     end
-    budgets
   end
-
 
 end

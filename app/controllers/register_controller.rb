@@ -2,10 +2,9 @@ class RegisterController < ApplicationController
 
   def index
     if auth_hash
-      token = auth_hash["credentials"]["token"]
-      session[:token] = token
+      session[:token] = auth_hash["credentials"]["token"]
       unless current_user.ynab_budget_id
-        budget_id = get_id(token)
+        budget_id = get_id(session[:token])
         current_user.update(ynab_budget_id: budget_id)
       end
       @direction = :login
@@ -34,13 +33,7 @@ class RegisterController < ApplicationController
   end
 
   def get_id(token)
-    conn = Faraday.new(url: 'https://api.youneedabudget.com')
-
-    response = conn.get "/v1/budgets" do |f|
-      f.headers['Authorization'] = "Bearer #{token}"
-    end
-
-    budget_data = JSON.parse(response.body, symbolize_names: true)
-    budget_data[:data][:budgets][0][:id]
+    service = YnabService.new({token: token})
+    service.return_budget_id
   end
 end
