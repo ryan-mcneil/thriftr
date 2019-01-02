@@ -30,17 +30,10 @@ class BudgetFacade
     service = YnabService.new(data)
     budgets = service.budget_categories
 
-    # conn = Faraday.new(url: 'https://api.youneedabudget.com')
-
-    # response = conn.get "/v1/budgets/#{budget_id}" do |f|
-    #   f.headers['Authorization'] = "Bearer #{token}"
-    # end
-    # budget_data = JSON.parse(response.body, symbolize_names: true)[:data][:budget][:categories]
     budgets.map do |budget|
       Budget.new(budget[:name],
                 budget[:balance])
     end
   end
-
 
 end
